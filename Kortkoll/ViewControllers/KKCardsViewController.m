@@ -118,9 +118,6 @@
 }
 
 - (void)_updateAction:(id)sender {
-  [KKLibrary.library setCards:@[[KKCard mock], [KKCard mock]]];
-  return;
-  
   if ([KKApp userName] && [KKApp password] && self.bottomView.state != KKListCardsBottomViewStateLoading) {
     [self.bottomView setState:KKListCardsBottomViewStateLoading];
     [[KKAPISessionManager client] POST:@"session"
