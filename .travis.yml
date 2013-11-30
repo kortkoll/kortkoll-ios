@@ -1,0 +1,2 @@
+language: objective-c
+xctool -workspace Kortkoll.xcworkspace -scheme Kortkoll -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
