@@ -16,7 +16,7 @@ The app is already free, so why not? I would love to get some feedback on my wor
 
 Run the following commands to get started:
 
-    $ git clone https://github.com/kortkoll/kortkoll-ios.git
+    $ git clone https://github.com/Kortkoll/kortkoll-ios.git
     $ cd kortkoll-ios
     $ rake setup
 
@@ -24,7 +24,7 @@ Need help? Email <hej@kortkoll.nu> or open an issue with specifics.
 
 ## Contributing
 
-If you want to fix bugs, I'll love you forever! If you want to add some features, I may not merge it. I'm sure it will be awesome, but defending Kortkoll's simplicity is my utmost duty. If you're feeling like implementing a feature, check out the [issues](https://github.com/kortkoll/kortkoll-ios/issues) for things tagged with "feature".
+If you want to fix bugs, I'll love you forever! If you want to add some features, I may not merge it. I'm sure it will be awesome, but defending Kortkoll's simplicity is my utmost duty. If you're feeling like implementing a feature, check out the [issues](https://github.com/Kortkoll/kortkoll-ios/issues) for things tagged with "feature".
 
 ## Interesting stuff
 
