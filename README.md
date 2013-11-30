@@ -1,6 +1,6 @@
 # Kortkoll for iOS
 
-Kortkoll is a pet project of [@blommegard](http://twitter.com/blommegard), [@peterssonjesper](http://twitter.com/peterssonjesper), [@gellermark](http://twitter.com/gellermark) and [@wibron](http://twitter.com/wibron). It is an app that shows information about your [SL](http://sl.se/) Access Card.  
+Kortkoll is a pet project of [@blommegard](http://twitter.com/blommegard), [gellermark](http://dribbble.com/gellermark),  [@peterssonjesper](http://twitter.com/peterssonjesper) and [@wibron](http://twitter.com/wibron). It is an app that shows information about your [SL](http://sl.se/) Access Card.  
 It is an iOS7+ only app and my playground for testing out new features in the iOS SDK.
 
 We have wrapped the API, but it is still not very good to work with, mostly because of the auth procedure. As it looks like now, we have to auth every time we fetch the cards, resulting in we have to save the cridentials on the device, this is done safely in the keychain.  
