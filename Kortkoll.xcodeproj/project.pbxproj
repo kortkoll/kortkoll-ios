@@ -756,7 +756,7 @@
 				CODE_SIGN_ENTITLEMENTS = Kortkoll/Kortkoll.entitlements;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/simon/Dev/kortkoll/Vendor/Crashlytics,
+					"$(SRCROOT)/Vendor/**",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Kortkoll/Kortkoll-Prefix.pch";
@@ -767,7 +767,7 @@
 				INFOPLIST_FILE = "Kortkoll/Kortkoll-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/simon/Dev/kortkoll/Vendor/Localytics,
+					"$(SRCROOT)/Vendor/**",
 				);
 				OTHER_CFLAGS = (
 					"-Wall",
@@ -881,14 +881,14 @@
 				CODE_SIGN_ENTITLEMENTS = Kortkoll/Kortkoll.entitlements;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/simon/Dev/kortkoll/Vendor/Crashlytics,
+					"$(SRCROOT)/Vendor/**",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Kortkoll/Kortkoll-Prefix.pch";
 				INFOPLIST_FILE = "Kortkoll/Kortkoll-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/simon/Dev/kortkoll/Vendor/Localytics,
+					"$(SRCROOT)/Vendor/**",
 				);
 				OTHER_CFLAGS = (
 					"-Wall",
@@ -911,7 +911,7 @@
 				CODE_SIGN_ENTITLEMENTS = Kortkoll/Kortkoll.entitlements;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/simon/Dev/kortkoll/Vendor/Crashlytics,
+					"$(SRCROOT)/Vendor/**",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Kortkoll/Kortkoll-Prefix.pch";
@@ -922,7 +922,7 @@
 				INFOPLIST_FILE = "Kortkoll/Kortkoll-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/simon/Dev/kortkoll/Vendor/Localytics,
+					"$(SRCROOT)/Vendor/**",
 				);
 				OTHER_CFLAGS = (
 					"-Wall",
