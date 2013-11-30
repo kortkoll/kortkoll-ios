@@ -1,5 +1,7 @@
 # Kortkoll for iOS
 
+[![Build Status](https://travis-ci.org/Kortkoll/kortkoll-ios.png?branch=master)](https://travis-ci.org/Kortkoll/kortkoll-ios)
+
 Kortkoll is a pet project of [@blommegard](http://twitter.com/blommegard), [gellermark](http://dribbble.com/gellermark),  [@peterssonjesper](http://twitter.com/peterssonjesper) and [@wibron](http://twitter.com/wibron). It is an app that shows information about your [SL](http://sl.se/) Access Card.  
 It is an iOS7+ only app and my playground for testing out new features in the iOS SDK.
 
