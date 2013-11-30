@@ -1,2 +1,7 @@
 language: objective-c
-script: xctool -workspace Kortkoll.xcworkspace -scheme Kortkoll -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+install:
+  - brew update
+  - brew install xctool
+  - gem instal cocoapods
+script:
+  - xctool -workspace Kortkoll.xcworkspace -scheme Kortkoll -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
