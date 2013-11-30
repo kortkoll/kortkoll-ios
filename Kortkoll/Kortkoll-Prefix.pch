@@ -1,0 +1,18 @@
+//
+// Prefix header for all source files of the 'Kortkoll' target in the 'Kortkoll' project
+//
+
+@import Darwin.Availability;
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+  @import UIKit;
+  @import Foundation;
+  #import "KKApp.h"
+  @import SystemConfiguration;
+  @import MobileCoreServices;
+#endif
+
