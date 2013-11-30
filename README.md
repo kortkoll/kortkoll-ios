@@ -4,7 +4,7 @@ Kortkoll is a pet project of [@blommegard](http://twitter.com/blommegard), [gell
 It is an iOS7+ only app and my playground for testing out new features in the iOS SDK.
 
 We have wrapped the API, but it is still not very good to work with, mostly because of the auth procedure. As it looks like now, we have to auth every time we fetch the cards, resulting in we have to save the cridentials on the device, this is done safely in the keychain.  
-There are a lot of [magic numbers](http://en.wikipedia.org/wiki/Magic_number_(programming)) in here, just a heads up and it is only localized in swedish for now.
+There are a lot of [magic numbers](http://en.wikipedia.org/wiki/Magic_number_(programming\)) in here, just a heads up and it is only localized in swedish for now.
 
 The app is currently live in the [App Store](https://itunes.apple.com/se/app/kortkoll/id681422117) and was first developed on [Stockholm Startup Hack](http://www.sthlmstartuphack.com/).
 
