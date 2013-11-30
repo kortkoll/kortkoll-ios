@@ -1,0 +1,1017 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3E74BAB582E649D2875DB560 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 472D8CFD95874BD680BF5CA4 /* libPods.a */; };
+		F4427BC9184733E900D2D40F /* KKPullToRefreshContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4427BC8184733E900D2D40F /* KKPullToRefreshContentView.m */; };
+		F4448B031834BB8600A65603 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4448B021834BB8600A65603 /* SystemConfiguration.framework */; };
+		F4448B051834BB9300A65603 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4448B041834BB9300A65603 /* AdSupport.framework */; };
+		F44E02D11846B1340017365F /* libLocalyticsAMP_x64.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F44E02D01846B1340017365F /* libLocalyticsAMP_x64.a */; };
+		F4A6C8D618338CE900FEA8D8 /* NSDate+KKExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A6C7F118338CE800FEA8D8 /* NSDate+KKExtras.m */; };
+		F4A6C8D718338CE900FEA8D8 /* KKAPISessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A6C7F418338CE800FEA8D8 /* KKAPISessionManager.m */; };
+		F4A6C8D818338CE900FEA8D8 /* KKCollectionViewSettingsLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A6C7F618338CE800FEA8D8 /* KKCollectionViewSettingsLayout.m */; };
+		F4A6C8D918338CE900FEA8D8 /* KKConditionalRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A6C7F818338CE800FEA8D8 /* KKConditionalRunner.m */; };
+		F4A6C8DA18338CE900FEA8D8 /* KKHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A6C7FA18338CE800FEA8D8 /* KKHUD.m */; };
+		F4A6C8DB18338CE900FEA8D8 /* KKText.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A6C7FC18338CE800FEA8D8 /* KKText.m */; };
+		F4A6C8DC18338CE900FEA8D8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F4A6C7FD18338CE800FEA8D8 /* InfoPlist.strings */; };
+		F4A6C97318338CE900FEA8D8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4A6C89918338CE900FEA8D8 /* Images.xcassets */; };
+		F4A6C97418338CE900FEA8D8 /* KKApp.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A6C89B18338CE900FEA8D8 /* KKApp.m */; };
+		F4A6C97518338CE900FEA8D8 /* KKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A6C89D18338CE900FEA8D8 /* KKAppDelegate.m */; };
+		F4A6C97818338CE900FEA8D8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A6C8A118338CE900FEA8D8 /* main.m */; };
+		F4A6C97918338CE900FEA8D8 /* KKCard.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A6C8A418338CE900FEA8D8 /* KKCard.m */; };
+		F4A6C97A18338CE900FEA8D8 /* KKLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A6C8A618338CE900FEA8D8 /* KKLibrary.m */; };
+		F4A6C97B18338CE900FEA8D8 /* KKProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A6C8A818338CE900FEA8D8 /* KKProduct.m */; };
+		F4A6C97C18338CE900FEA8D8 /* blip.wav in Resources */ = {isa = PBXBuildFile; fileRef = F4A6C8AA18338CE900FEA8D8 /* blip.wav */; };
+		F4A6C97D18338CE900FEA8D8 /* KKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A6C8AD18338CE900FEA8D8 /* KKViewController.m */; };
+		F4A6C97E18338CE900FEA8D8 /* KKBackgroundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A6C8AF18338CE900FEA8D8 /* KKBackgroundViewController.m */; };
+		F4A6C97F18338CE900FEA8D8 /* KKCardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A6C8B318338CE900FEA8D8 /* KKCardCell.m */; };
+		F4A6C98018338CE900FEA8D8 /* KKCardSegmentProductCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A6C8B518338CE900FEA8D8 /* KKCardSegmentProductCell.m */; };
+		F4A6C98318338CE900FEA8D8 /* KKSettingsButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A6C8BB18338CE900FEA8D8 /* KKSettingsButtonCell.m */; };
+		F4A6C98418338CE900FEA8D8 /* KKSettingsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A6C8BD18338CE900FEA8D8 /* KKSettingsCell.m */; };
+		F4A6C98518338CE900FEA8D8 /* KKSettingsInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A6C8BF18338CE900FEA8D8 /* KKSettingsInfoCell.m */; };
+		F4A6C98618338CE900FEA8D8 /* KKCardsPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A6C8C118338CE900FEA8D8 /* KKCardsPageControl.m */; };
+		F4A6C98718338CE900FEA8D8 /* KKCardsView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A6C8C318338CE900FEA8D8 /* KKCardsView.m */; };
+		F4A6C98818338CE900FEA8D8 /* KKListCardsBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A6C8C518338CE900FEA8D8 /* KKListCardsBottomView.m */; };
+		F4A6C98A18338CE900FEA8D8 /* KKLoginTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A6C8C918338CE900FEA8D8 /* KKLoginTextField.m */; };
+		F4A6C98B18338CE900FEA8D8 /* KKLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A6C8CB18338CE900FEA8D8 /* KKLoginView.m */; };
+		F4A6C98C18338CE900FEA8D8 /* KKNumberLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A6C8CD18338CE900FEA8D8 /* KKNumberLabel.m */; };
+		F4A6C98D18338CE900FEA8D8 /* KKSpinnerLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A6C8CF18338CE900FEA8D8 /* KKSpinnerLayer.m */; };
+		F4A6C98E18338CE900FEA8D8 /* KKTownScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A6C8D118338CE900FEA8D8 /* KKTownScrollView.m */; };
+		F4A6C98F18338CE900FEA8D8 /* KKTownView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A6C8D318338CE900FEA8D8 /* KKTownView.m */; };
+		F4A6C99018338CE900FEA8D8 /* KKWelcomeHUDView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A6C8D518338CE900FEA8D8 /* KKWelcomeHUDView.m */; };
+		F4A6C9DE18338D3D00FEA8D8 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4A6C99318338D3C00FEA8D8 /* Crashlytics.framework */; };
+		F4B2C9A61849758700473239 /* KKCardFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B2C9A51849758700473239 /* KKCardFlowLayout.m */; };
+		F4B2C9AC1849775B00473239 /* KKCardGradientDecorationView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B2C9AB1849775B00473239 /* KKCardGradientDecorationView.m */; };
+		F4B2C9AF18498A9900473239 /* KKCardSeparatorDecorationView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B2C9AE18498A9900473239 /* KKCardSeparatorDecorationView.m */; };
+		F4B2C9B2184990BA00473239 /* KKAppPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B2C9B1184990BA00473239 /* KKAppPrivate.m */; };
+		F4B574FA1846FF4F001A0883 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F4B574F91846FF4F001A0883 /* Settings.bundle */; };
+		F4B57505184700C8001A0883 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4B574FB184700C8001A0883 /* OpenSans-Bold.ttf */; };
+		F4B57506184700C8001A0883 /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4B574FC184700C8001A0883 /* OpenSans-BoldItalic.ttf */; };
+		F4B57507184700C8001A0883 /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4B574FD184700C8001A0883 /* OpenSans-ExtraBold.ttf */; };
+		F4B57508184700C8001A0883 /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4B574FE184700C8001A0883 /* OpenSans-ExtraBoldItalic.ttf */; };
+		F4B57509184700C8001A0883 /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4B574FF184700C8001A0883 /* OpenSans-Italic.ttf */; };
+		F4B5750A184700C8001A0883 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4B57500184700C8001A0883 /* OpenSans-Light.ttf */; };
+		F4B5750B184700C8001A0883 /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4B57501184700C8001A0883 /* OpenSans-LightItalic.ttf */; };
+		F4B5750C184700C8001A0883 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4B57502184700C8001A0883 /* OpenSans-Regular.ttf */; };
+		F4B5750D184700C8001A0883 /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4B57503184700C8001A0883 /* OpenSans-Semibold.ttf */; };
+		F4B5750E184700C8001A0883 /* OpenSans-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4B57504184700C8001A0883 /* OpenSans-SemiboldItalic.ttf */; };
+		F4D0116F18348A6400FDAFC2 /* KKMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4D0116E18348A6400FDAFC2 /* KKMain.storyboard */; };
+		F4D0117B18348DED00FDAFC2 /* CAAnimation+SBExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D0117A18348DED00FDAFC2 /* CAAnimation+SBExtras.m */; };
+		F4D0117E18348DF600FDAFC2 /* NSObject+SBExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D0117D18348DF600FDAFC2 /* NSObject+SBExtras.m */; };
+		F4D011811834925D00FDAFC2 /* SBKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D011801834925D00FDAFC2 /* SBKeychain.m */; };
+		F4D011841834986E00FDAFC2 /* SBDrawingHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D011831834986E00FDAFC2 /* SBDrawingHelpers.m */; };
+		F4D0118618349E0C00FDAFC2 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F4D0118518349E0C00FDAFC2 /* libz.dylib */; };
+		F4D0118818349EC600FDAFC2 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F4D0118718349EC600FDAFC2 /* libsqlite3.dylib */; };
+		F4DF78FB18338C7A00B333DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4DF78FA18338C7A00B333DD /* Foundation.framework */; };
+		F4DF78FD18338C7A00B333DD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4DF78FC18338C7A00B333DD /* CoreGraphics.framework */; };
+		F4DF78FF18338C7A00B333DD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4DF78FE18338C7A00B333DD /* UIKit.framework */; };
+		F4DF791B18338C7A00B333DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4DF78FA18338C7A00B333DD /* Foundation.framework */; };
+		F4DF791C18338C7A00B333DD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4DF78FE18338C7A00B333DD /* UIKit.framework */; };
+		F4E640391842A9CB005677FB /* KKLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E640381842A9CB005677FB /* KKLoginViewController.m */; };
+		F4E6403C1842E31B005677FB /* KKCardsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E6403B1842E31B005677FB /* KKCardsViewController.m */; };
+		F4E640431842EC08005677FB /* KKCustomizationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E640421842EC08005677FB /* KKCustomizationController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F4DF791D18338C7A00B333DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4DF78EF18338C7A00B333DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4DF78F618338C7A00B333DD;
+			remoteInfo = Kortkoll;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		472D8CFD95874BD680BF5CA4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A85804EAE2244FCA927696BE /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		F4427BC7184733E900D2D40F /* KKPullToRefreshContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKPullToRefreshContentView.h; sourceTree = "<group>"; };
+		F4427BC8184733E900D2D40F /* KKPullToRefreshContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKPullToRefreshContentView.m; sourceTree = "<group>"; };
+		F4448B021834BB8600A65603 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F4448B041834BB9300A65603 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		F44E02D01846B1340017365F /* libLocalyticsAMP_x64.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libLocalyticsAMP_x64.a; sourceTree = "<group>"; };
+		F4A6C7F018338CE800FEA8D8 /* NSDate+KKExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+KKExtras.h"; sourceTree = "<group>"; };
+		F4A6C7F118338CE800FEA8D8 /* NSDate+KKExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+KKExtras.m"; sourceTree = "<group>"; };
+		F4A6C7F318338CE800FEA8D8 /* KKAPISessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKAPISessionManager.h; sourceTree = "<group>"; };
+		F4A6C7F418338CE800FEA8D8 /* KKAPISessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKAPISessionManager.m; sourceTree = "<group>"; };
+		F4A6C7F518338CE800FEA8D8 /* KKCollectionViewSettingsLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKCollectionViewSettingsLayout.h; sourceTree = "<group>"; };
+		F4A6C7F618338CE800FEA8D8 /* KKCollectionViewSettingsLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKCollectionViewSettingsLayout.m; sourceTree = "<group>"; };
+		F4A6C7F718338CE800FEA8D8 /* KKConditionalRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKConditionalRunner.h; sourceTree = "<group>"; };
+		F4A6C7F818338CE800FEA8D8 /* KKConditionalRunner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKConditionalRunner.m; sourceTree = "<group>"; };
+		F4A6C7F918338CE800FEA8D8 /* KKHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKHUD.h; sourceTree = "<group>"; };
+		F4A6C7FA18338CE800FEA8D8 /* KKHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKHUD.m; sourceTree = "<group>"; };
+		F4A6C7FB18338CE800FEA8D8 /* KKText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKText.h; sourceTree = "<group>"; };
+		F4A6C7FC18338CE800FEA8D8 /* KKText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKText.m; sourceTree = "<group>"; };
+		F4A6C7FE18338CE800FEA8D8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F4A6C89918338CE900FEA8D8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F4A6C89A18338CE900FEA8D8 /* KKApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKApp.h; sourceTree = "<group>"; };
+		F4A6C89B18338CE900FEA8D8 /* KKApp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKApp.m; sourceTree = "<group>"; };
+		F4A6C89C18338CE900FEA8D8 /* KKAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKAppDelegate.h; sourceTree = "<group>"; };
+		F4A6C89D18338CE900FEA8D8 /* KKAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKAppDelegate.m; sourceTree = "<group>"; };
+		F4A6C89F18338CE900FEA8D8 /* Kortkoll-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Kortkoll-Info.plist"; sourceTree = "<group>"; };
+		F4A6C8A018338CE900FEA8D8 /* Kortkoll-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Kortkoll-Prefix.pch"; sourceTree = "<group>"; };
+		F4A6C8A118338CE900FEA8D8 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F4A6C8A318338CE900FEA8D8 /* KKCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKCard.h; sourceTree = "<group>"; };
+		F4A6C8A418338CE900FEA8D8 /* KKCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKCard.m; sourceTree = "<group>"; };
+		F4A6C8A518338CE900FEA8D8 /* KKLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKLibrary.h; sourceTree = "<group>"; };
+		F4A6C8A618338CE900FEA8D8 /* KKLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKLibrary.m; sourceTree = "<group>"; };
+		F4A6C8A718338CE900FEA8D8 /* KKProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKProduct.h; sourceTree = "<group>"; };
+		F4A6C8A818338CE900FEA8D8 /* KKProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKProduct.m; sourceTree = "<group>"; };
+		F4A6C8AA18338CE900FEA8D8 /* blip.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = blip.wav; sourceTree = "<group>"; };
+		F4A6C8AC18338CE900FEA8D8 /* KKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKViewController.h; sourceTree = "<group>"; };
+		F4A6C8AD18338CE900FEA8D8 /* KKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKViewController.m; sourceTree = "<group>"; };
+		F4A6C8AE18338CE900FEA8D8 /* KKBackgroundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKBackgroundViewController.h; sourceTree = "<group>"; };
+		F4A6C8AF18338CE900FEA8D8 /* KKBackgroundViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKBackgroundViewController.m; sourceTree = "<group>"; };
+		F4A6C8B218338CE900FEA8D8 /* KKCardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKCardCell.h; sourceTree = "<group>"; };
+		F4A6C8B318338CE900FEA8D8 /* KKCardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKCardCell.m; sourceTree = "<group>"; };
+		F4A6C8B418338CE900FEA8D8 /* KKCardSegmentProductCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKCardSegmentProductCell.h; sourceTree = "<group>"; };
+		F4A6C8B518338CE900FEA8D8 /* KKCardSegmentProductCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKCardSegmentProductCell.m; sourceTree = "<group>"; };
+		F4A6C8BA18338CE900FEA8D8 /* KKSettingsButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKSettingsButtonCell.h; sourceTree = "<group>"; };
+		F4A6C8BB18338CE900FEA8D8 /* KKSettingsButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKSettingsButtonCell.m; sourceTree = "<group>"; };
+		F4A6C8BC18338CE900FEA8D8 /* KKSettingsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKSettingsCell.h; sourceTree = "<group>"; };
+		F4A6C8BD18338CE900FEA8D8 /* KKSettingsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKSettingsCell.m; sourceTree = "<group>"; };
+		F4A6C8BE18338CE900FEA8D8 /* KKSettingsInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKSettingsInfoCell.h; sourceTree = "<group>"; };
+		F4A6C8BF18338CE900FEA8D8 /* KKSettingsInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKSettingsInfoCell.m; sourceTree = "<group>"; };
+		F4A6C8C018338CE900FEA8D8 /* KKCardsPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKCardsPageControl.h; sourceTree = "<group>"; };
+		F4A6C8C118338CE900FEA8D8 /* KKCardsPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKCardsPageControl.m; sourceTree = "<group>"; };
+		F4A6C8C218338CE900FEA8D8 /* KKCardsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKCardsView.h; sourceTree = "<group>"; };
+		F4A6C8C318338CE900FEA8D8 /* KKCardsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKCardsView.m; sourceTree = "<group>"; };
+		F4A6C8C418338CE900FEA8D8 /* KKListCardsBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKListCardsBottomView.h; sourceTree = "<group>"; };
+		F4A6C8C518338CE900FEA8D8 /* KKListCardsBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKListCardsBottomView.m; sourceTree = "<group>"; };
+		F4A6C8C818338CE900FEA8D8 /* KKLoginTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKLoginTextField.h; sourceTree = "<group>"; };
+		F4A6C8C918338CE900FEA8D8 /* KKLoginTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKLoginTextField.m; sourceTree = "<group>"; };
+		F4A6C8CA18338CE900FEA8D8 /* KKLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKLoginView.h; sourceTree = "<group>"; };
+		F4A6C8CB18338CE900FEA8D8 /* KKLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKLoginView.m; sourceTree = "<group>"; };
+		F4A6C8CC18338CE900FEA8D8 /* KKNumberLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKNumberLabel.h; sourceTree = "<group>"; };
+		F4A6C8CD18338CE900FEA8D8 /* KKNumberLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKNumberLabel.m; sourceTree = "<group>"; };
+		F4A6C8CE18338CE900FEA8D8 /* KKSpinnerLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKSpinnerLayer.h; sourceTree = "<group>"; };
+		F4A6C8CF18338CE900FEA8D8 /* KKSpinnerLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKSpinnerLayer.m; sourceTree = "<group>"; };
+		F4A6C8D018338CE900FEA8D8 /* KKTownScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKTownScrollView.h; sourceTree = "<group>"; };
+		F4A6C8D118338CE900FEA8D8 /* KKTownScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKTownScrollView.m; sourceTree = "<group>"; };
+		F4A6C8D218338CE900FEA8D8 /* KKTownView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKTownView.h; sourceTree = "<group>"; };
+		F4A6C8D318338CE900FEA8D8 /* KKTownView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKTownView.m; sourceTree = "<group>"; };
+		F4A6C8D418338CE900FEA8D8 /* KKWelcomeHUDView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKWelcomeHUDView.h; sourceTree = "<group>"; };
+		F4A6C8D518338CE900FEA8D8 /* KKWelcomeHUDView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKWelcomeHUDView.m; sourceTree = "<group>"; };
+		F4A6C99318338D3C00FEA8D8 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		F4A6C99818338D3D00FEA8D8 /* LocalyticsSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalyticsSession.h; sourceTree = "<group>"; };
+		F4B2C9A41849758700473239 /* KKCardFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKCardFlowLayout.h; sourceTree = "<group>"; };
+		F4B2C9A51849758700473239 /* KKCardFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKCardFlowLayout.m; sourceTree = "<group>"; };
+		F4B2C9AA1849775B00473239 /* KKCardGradientDecorationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKCardGradientDecorationView.h; sourceTree = "<group>"; };
+		F4B2C9AB1849775B00473239 /* KKCardGradientDecorationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKCardGradientDecorationView.m; sourceTree = "<group>"; };
+		F4B2C9AD18498A9900473239 /* KKCardSeparatorDecorationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKCardSeparatorDecorationView.h; sourceTree = "<group>"; };
+		F4B2C9AE18498A9900473239 /* KKCardSeparatorDecorationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKCardSeparatorDecorationView.m; sourceTree = "<group>"; };
+		F4B2C9B0184990BA00473239 /* KKAppPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKAppPrivate.h; sourceTree = "<group>"; };
+		F4B2C9B1184990BA00473239 /* KKAppPrivate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKAppPrivate.m; sourceTree = "<group>"; };
+		F4B574F91846FF4F001A0883 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		F4B574FB184700C8001A0883 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		F4B574FC184700C8001A0883 /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		F4B574FD184700C8001A0883 /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		F4B574FE184700C8001A0883 /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		F4B574FF184700C8001A0883 /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Italic.ttf"; sourceTree = "<group>"; };
+		F4B57500184700C8001A0883 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		F4B57501184700C8001A0883 /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		F4B57502184700C8001A0883 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		F4B57503184700C8001A0883 /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
+		F4B57504184700C8001A0883 /* OpenSans-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiboldItalic.ttf"; sourceTree = "<group>"; };
+		F4D0116E18348A6400FDAFC2 /* KKMain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = KKMain.storyboard; sourceTree = "<group>"; };
+		F4D0117918348DED00FDAFC2 /* CAAnimation+SBExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAAnimation+SBExtras.h"; sourceTree = "<group>"; };
+		F4D0117A18348DED00FDAFC2 /* CAAnimation+SBExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAAnimation+SBExtras.m"; sourceTree = "<group>"; };
+		F4D0117C18348DF600FDAFC2 /* NSObject+SBExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBExtras.h"; sourceTree = "<group>"; };
+		F4D0117D18348DF600FDAFC2 /* NSObject+SBExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBExtras.m"; sourceTree = "<group>"; };
+		F4D0117F1834925D00FDAFC2 /* SBKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBKeychain.h; sourceTree = "<group>"; };
+		F4D011801834925D00FDAFC2 /* SBKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBKeychain.m; sourceTree = "<group>"; };
+		F4D011821834986E00FDAFC2 /* SBDrawingHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBDrawingHelpers.h; sourceTree = "<group>"; };
+		F4D011831834986E00FDAFC2 /* SBDrawingHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBDrawingHelpers.m; sourceTree = "<group>"; };
+		F4D0118518349E0C00FDAFC2 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		F4D0118718349EC600FDAFC2 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		F4DF78F718338C7A00B333DD /* Kortkoll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kortkoll.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4DF78FA18338C7A00B333DD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F4DF78FC18338C7A00B333DD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F4DF78FE18338C7A00B333DD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F4DF791818338C7A00B333DD /* KortkollTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KortkollTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4E640371842A9CB005677FB /* KKLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKLoginViewController.h; sourceTree = "<group>"; };
+		F4E640381842A9CB005677FB /* KKLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKLoginViewController.m; sourceTree = "<group>"; };
+		F4E6403A1842E31B005677FB /* KKCardsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKCardsViewController.h; sourceTree = "<group>"; };
+		F4E6403B1842E31B005677FB /* KKCardsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKCardsViewController.m; sourceTree = "<group>"; };
+		F4E640411842EC08005677FB /* KKCustomizationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKCustomizationController.h; sourceTree = "<group>"; };
+		F4E640421842EC08005677FB /* KKCustomizationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKCustomizationController.m; sourceTree = "<group>"; };
+		F4F6EF2018433BBD002976E0 /* Kortkoll.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Kortkoll.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F4DF78F418338C7A00B333DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4448B051834BB9300A65603 /* AdSupport.framework in Frameworks */,
+				F4448B031834BB8600A65603 /* SystemConfiguration.framework in Frameworks */,
+				F4D0118818349EC600FDAFC2 /* libsqlite3.dylib in Frameworks */,
+				F4D0118618349E0C00FDAFC2 /* libz.dylib in Frameworks */,
+				F44E02D11846B1340017365F /* libLocalyticsAMP_x64.a in Frameworks */,
+				F4DF78FD18338C7A00B333DD /* CoreGraphics.framework in Frameworks */,
+				F4DF78FF18338C7A00B333DD /* UIKit.framework in Frameworks */,
+				F4A6C9DE18338D3D00FEA8D8 /* Crashlytics.framework in Frameworks */,
+				F4DF78FB18338C7A00B333DD /* Foundation.framework in Frameworks */,
+				3E74BAB582E649D2875DB560 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4DF791518338C7A00B333DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4DF791C18338C7A00B333DD /* UIKit.framework in Frameworks */,
+				F4DF791B18338C7A00B333DD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F4448B011834A8EA00A65603 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F4A6C7FD18338CE800FEA8D8 /* InfoPlist.strings */,
+				F4A6C89C18338CE900FEA8D8 /* KKAppDelegate.h */,
+				F4A6C89D18338CE900FEA8D8 /* KKAppDelegate.m */,
+				F4A6C89F18338CE900FEA8D8 /* Kortkoll-Info.plist */,
+				F4A6C8A018338CE900FEA8D8 /* Kortkoll-Prefix.pch */,
+				F4A6C8A118338CE900FEA8D8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F4A6C7EE18338CE800FEA8D8 /* Kortkoll */ = {
+			isa = PBXGroup;
+			children = (
+				F4B574F91846FF4F001A0883 /* Settings.bundle */,
+				F4F6EF2018433BBD002976E0 /* Kortkoll.entitlements */,
+				F4A6C89918338CE900FEA8D8 /* Images.xcassets */,
+				F4A6C89A18338CE900FEA8D8 /* KKApp.h */,
+				F4A6C89B18338CE900FEA8D8 /* KKApp.m */,
+				F4B2C9B0184990BA00473239 /* KKAppPrivate.h */,
+				F4B2C9B1184990BA00473239 /* KKAppPrivate.m */,
+				F4D0116E18348A6400FDAFC2 /* KKMain.storyboard */,
+				F4448B011834A8EA00A65603 /* Supporting Files */,
+				F4A6C7EF18338CE800FEA8D8 /* Categories */,
+				F4A6C7F218338CE800FEA8D8 /* Controllers */,
+				F4A6C7FF18338CE800FEA8D8 /* Fonts */,
+				F4A6C8A218338CE900FEA8D8 /* Models */,
+				F4A6C8A918338CE900FEA8D8 /* Sounds */,
+				F4A6C8AB18338CE900FEA8D8 /* ViewControllers */,
+				F4A6C8B018338CE900FEA8D8 /* Views */,
+			);
+			path = Kortkoll;
+			sourceTree = "<group>";
+		};
+		F4A6C7EF18338CE800FEA8D8 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				F4D0117C18348DF600FDAFC2 /* NSObject+SBExtras.h */,
+				F4D0117D18348DF600FDAFC2 /* NSObject+SBExtras.m */,
+				F4D0117918348DED00FDAFC2 /* CAAnimation+SBExtras.h */,
+				F4D0117A18348DED00FDAFC2 /* CAAnimation+SBExtras.m */,
+				F4A6C7F018338CE800FEA8D8 /* NSDate+KKExtras.h */,
+				F4A6C7F118338CE800FEA8D8 /* NSDate+KKExtras.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		F4A6C7F218338CE800FEA8D8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F4D011821834986E00FDAFC2 /* SBDrawingHelpers.h */,
+				F4D011831834986E00FDAFC2 /* SBDrawingHelpers.m */,
+				F4D0117F1834925D00FDAFC2 /* SBKeychain.h */,
+				F4D011801834925D00FDAFC2 /* SBKeychain.m */,
+				F4A6C7F318338CE800FEA8D8 /* KKAPISessionManager.h */,
+				F4A6C7F418338CE800FEA8D8 /* KKAPISessionManager.m */,
+				F4A6C7F518338CE800FEA8D8 /* KKCollectionViewSettingsLayout.h */,
+				F4A6C7F618338CE800FEA8D8 /* KKCollectionViewSettingsLayout.m */,
+				F4A6C7F718338CE800FEA8D8 /* KKConditionalRunner.h */,
+				F4A6C7F818338CE800FEA8D8 /* KKConditionalRunner.m */,
+				F4A6C7F918338CE800FEA8D8 /* KKHUD.h */,
+				F4A6C7FA18338CE800FEA8D8 /* KKHUD.m */,
+				F4A6C7FB18338CE800FEA8D8 /* KKText.h */,
+				F4A6C7FC18338CE800FEA8D8 /* KKText.m */,
+				F4E640411842EC08005677FB /* KKCustomizationController.h */,
+				F4E640421842EC08005677FB /* KKCustomizationController.m */,
+				F4B2C9A41849758700473239 /* KKCardFlowLayout.h */,
+				F4B2C9A51849758700473239 /* KKCardFlowLayout.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F4A6C7FF18338CE800FEA8D8 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F4B574FB184700C8001A0883 /* OpenSans-Bold.ttf */,
+				F4B574FC184700C8001A0883 /* OpenSans-BoldItalic.ttf */,
+				F4B574FD184700C8001A0883 /* OpenSans-ExtraBold.ttf */,
+				F4B574FE184700C8001A0883 /* OpenSans-ExtraBoldItalic.ttf */,
+				F4B574FF184700C8001A0883 /* OpenSans-Italic.ttf */,
+				F4B57500184700C8001A0883 /* OpenSans-Light.ttf */,
+				F4B57501184700C8001A0883 /* OpenSans-LightItalic.ttf */,
+				F4B57502184700C8001A0883 /* OpenSans-Regular.ttf */,
+				F4B57503184700C8001A0883 /* OpenSans-Semibold.ttf */,
+				F4B57504184700C8001A0883 /* OpenSans-SemiboldItalic.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		F4A6C8A218338CE900FEA8D8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F4A6C8A318338CE900FEA8D8 /* KKCard.h */,
+				F4A6C8A418338CE900FEA8D8 /* KKCard.m */,
+				F4A6C8A518338CE900FEA8D8 /* KKLibrary.h */,
+				F4A6C8A618338CE900FEA8D8 /* KKLibrary.m */,
+				F4A6C8A718338CE900FEA8D8 /* KKProduct.h */,
+				F4A6C8A818338CE900FEA8D8 /* KKProduct.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F4A6C8A918338CE900FEA8D8 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				F4A6C8AA18338CE900FEA8D8 /* blip.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		F4A6C8AB18338CE900FEA8D8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F4A6C8AC18338CE900FEA8D8 /* KKViewController.h */,
+				F4A6C8AD18338CE900FEA8D8 /* KKViewController.m */,
+				F4A6C8AE18338CE900FEA8D8 /* KKBackgroundViewController.h */,
+				F4A6C8AF18338CE900FEA8D8 /* KKBackgroundViewController.m */,
+				F4E640371842A9CB005677FB /* KKLoginViewController.h */,
+				F4E640381842A9CB005677FB /* KKLoginViewController.m */,
+				F4E6403A1842E31B005677FB /* KKCardsViewController.h */,
+				F4E6403B1842E31B005677FB /* KKCardsViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F4A6C8B018338CE900FEA8D8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F4A6C8B118338CE900FEA8D8 /* Cells */,
+				F4A6C8C018338CE900FEA8D8 /* KKCardsPageControl.h */,
+				F4A6C8C118338CE900FEA8D8 /* KKCardsPageControl.m */,
+				F4A6C8C218338CE900FEA8D8 /* KKCardsView.h */,
+				F4A6C8C318338CE900FEA8D8 /* KKCardsView.m */,
+				F4A6C8C418338CE900FEA8D8 /* KKListCardsBottomView.h */,
+				F4A6C8C518338CE900FEA8D8 /* KKListCardsBottomView.m */,
+				F4A6C8C818338CE900FEA8D8 /* KKLoginTextField.h */,
+				F4A6C8C918338CE900FEA8D8 /* KKLoginTextField.m */,
+				F4A6C8CA18338CE900FEA8D8 /* KKLoginView.h */,
+				F4A6C8CB18338CE900FEA8D8 /* KKLoginView.m */,
+				F4A6C8CC18338CE900FEA8D8 /* KKNumberLabel.h */,
+				F4A6C8CD18338CE900FEA8D8 /* KKNumberLabel.m */,
+				F4A6C8CE18338CE900FEA8D8 /* KKSpinnerLayer.h */,
+				F4A6C8CF18338CE900FEA8D8 /* KKSpinnerLayer.m */,
+				F4A6C8D018338CE900FEA8D8 /* KKTownScrollView.h */,
+				F4A6C8D118338CE900FEA8D8 /* KKTownScrollView.m */,
+				F4A6C8D218338CE900FEA8D8 /* KKTownView.h */,
+				F4A6C8D318338CE900FEA8D8 /* KKTownView.m */,
+				F4A6C8D418338CE900FEA8D8 /* KKWelcomeHUDView.h */,
+				F4A6C8D518338CE900FEA8D8 /* KKWelcomeHUDView.m */,
+				F4427BC7184733E900D2D40F /* KKPullToRefreshContentView.h */,
+				F4427BC8184733E900D2D40F /* KKPullToRefreshContentView.m */,
+				F4B2C9AA1849775B00473239 /* KKCardGradientDecorationView.h */,
+				F4B2C9AB1849775B00473239 /* KKCardGradientDecorationView.m */,
+				F4B2C9AD18498A9900473239 /* KKCardSeparatorDecorationView.h */,
+				F4B2C9AE18498A9900473239 /* KKCardSeparatorDecorationView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F4A6C8B118338CE900FEA8D8 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F4A6C8B218338CE900FEA8D8 /* KKCardCell.h */,
+				F4A6C8B318338CE900FEA8D8 /* KKCardCell.m */,
+				F4A6C8B418338CE900FEA8D8 /* KKCardSegmentProductCell.h */,
+				F4A6C8B518338CE900FEA8D8 /* KKCardSegmentProductCell.m */,
+				F4A6C8BC18338CE900FEA8D8 /* KKSettingsCell.h */,
+				F4A6C8BD18338CE900FEA8D8 /* KKSettingsCell.m */,
+				F4A6C8BA18338CE900FEA8D8 /* KKSettingsButtonCell.h */,
+				F4A6C8BB18338CE900FEA8D8 /* KKSettingsButtonCell.m */,
+				F4A6C8BE18338CE900FEA8D8 /* KKSettingsInfoCell.h */,
+				F4A6C8BF18338CE900FEA8D8 /* KKSettingsInfoCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		F4A6C99118338D1500FEA8D8 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				F4A6C99218338D3C00FEA8D8 /* Crashlytics */,
+				F4A6C99418338D3D00FEA8D8 /* Localytics */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		F4A6C99218338D3C00FEA8D8 /* Crashlytics */ = {
+			isa = PBXGroup;
+			children = (
+				F4A6C99318338D3C00FEA8D8 /* Crashlytics.framework */,
+			);
+			path = Crashlytics;
+			sourceTree = "<group>";
+		};
+		F4A6C99418338D3D00FEA8D8 /* Localytics */ = {
+			isa = PBXGroup;
+			children = (
+				F44E02D01846B1340017365F /* libLocalyticsAMP_x64.a */,
+				F4A6C99818338D3D00FEA8D8 /* LocalyticsSession.h */,
+			);
+			path = Localytics;
+			sourceTree = "<group>";
+		};
+		F4DF78EE18338C7A00B333DD = {
+			isa = PBXGroup;
+			children = (
+				F4A6C99118338D1500FEA8D8 /* Vendor */,
+				F4A6C7EE18338CE800FEA8D8 /* Kortkoll */,
+				F4DF78F918338C7A00B333DD /* Frameworks */,
+				F4DF78F818338C7A00B333DD /* Products */,
+				A85804EAE2244FCA927696BE /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		F4DF78F818338C7A00B333DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4DF78F718338C7A00B333DD /* Kortkoll.app */,
+				F4DF791818338C7A00B333DD /* KortkollTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4DF78F918338C7A00B333DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F4448B041834BB9300A65603 /* AdSupport.framework */,
+				F4448B021834BB8600A65603 /* SystemConfiguration.framework */,
+				F4D0118718349EC600FDAFC2 /* libsqlite3.dylib */,
+				F4D0118518349E0C00FDAFC2 /* libz.dylib */,
+				F4DF78FC18338C7A00B333DD /* CoreGraphics.framework */,
+				F4DF78FA18338C7A00B333DD /* Foundation.framework */,
+				F4DF78FE18338C7A00B333DD /* UIKit.framework */,
+				472D8CFD95874BD680BF5CA4 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F4DF78F618338C7A00B333DD /* Kortkoll */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4DF792918338C7A00B333DD /* Build configuration list for PBXNativeTarget "Kortkoll" */;
+			buildPhases = (
+				AA76D7C6C0A8459D94D45268 /* Check Pods Manifest.lock */,
+				F4DF78F318338C7A00B333DD /* Sources */,
+				F4DF78F418338C7A00B333DD /* Frameworks */,
+				F4DF78F518338C7A00B333DD /* Resources */,
+				1145D667ABF74D12A869B102 /* Copy Pods Resources */,
+				F4448B061834BDB500A65603 /* Crashlytics */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kortkoll;
+			productName = Kortkoll;
+			productReference = F4DF78F718338C7A00B333DD /* Kortkoll.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F4DF791718338C7A00B333DD /* KortkollTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4DF792C18338C7A00B333DD /* Build configuration list for PBXNativeTarget "KortkollTests" */;
+			buildPhases = (
+				F4DF791418338C7A00B333DD /* Sources */,
+				F4DF791518338C7A00B333DD /* Frameworks */,
+				F4DF791618338C7A00B333DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4DF791E18338C7A00B333DD /* PBXTargetDependency */,
+			);
+			name = KortkollTests;
+			productName = KortkollTests;
+			productReference = F4DF791818338C7A00B333DD /* KortkollTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F4DF78EF18338C7A00B333DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = KK;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Kortkoll;
+				TargetAttributes = {
+					F4DF78F618338C7A00B333DD = {
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
+					};
+					F4DF791718338C7A00B333DD = {
+						TestTargetID = F4DF78F618338C7A00B333DD;
+					};
+				};
+			};
+			buildConfigurationList = F4DF78F218338C7A00B333DD /* Build configuration list for PBXProject "Kortkoll" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F4DF78EE18338C7A00B333DD;
+			productRefGroup = F4DF78F818338C7A00B333DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F4DF78F618338C7A00B333DD /* Kortkoll */,
+				F4DF791718338C7A00B333DD /* KortkollTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F4DF78F518338C7A00B333DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4D0116F18348A6400FDAFC2 /* KKMain.storyboard in Resources */,
+				F4B5750E184700C8001A0883 /* OpenSans-SemiboldItalic.ttf in Resources */,
+				F4B57508184700C8001A0883 /* OpenSans-ExtraBoldItalic.ttf in Resources */,
+				F4B5750B184700C8001A0883 /* OpenSans-LightItalic.ttf in Resources */,
+				F4A6C97C18338CE900FEA8D8 /* blip.wav in Resources */,
+				F4B57509184700C8001A0883 /* OpenSans-Italic.ttf in Resources */,
+				F4B57505184700C8001A0883 /* OpenSans-Bold.ttf in Resources */,
+				F4B57507184700C8001A0883 /* OpenSans-ExtraBold.ttf in Resources */,
+				F4B57506184700C8001A0883 /* OpenSans-BoldItalic.ttf in Resources */,
+				F4B574FA1846FF4F001A0883 /* Settings.bundle in Resources */,
+				F4A6C8DC18338CE900FEA8D8 /* InfoPlist.strings in Resources */,
+				F4B5750A184700C8001A0883 /* OpenSans-Light.ttf in Resources */,
+				F4B5750C184700C8001A0883 /* OpenSans-Regular.ttf in Resources */,
+				F4B5750D184700C8001A0883 /* OpenSans-Semibold.ttf in Resources */,
+				F4A6C97318338CE900FEA8D8 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4DF791618338C7A00B333DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1145D667ABF74D12A869B102 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA76D7C6C0A8459D94D45268 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F4448B061834BDB500A65603 /* Crashlytics */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Crashlytics;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = "/usr/bin/env ruby";
+			shellScript = "if ENV[\"CONFIGURATION\"] == \"Release\" || ENV[\"CONFIGURATION\"] == \"Beta\"\nsystem \"./Vendor/Crashlytics.framework/run 42438aa80e586e337df6b6c779fbf03cae38edc7\"\nend";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F4DF78F318338C7A00B333DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4A6C8DB18338CE900FEA8D8 /* KKText.m in Sources */,
+				F4A6C98A18338CE900FEA8D8 /* KKLoginTextField.m in Sources */,
+				F4A6C98818338CE900FEA8D8 /* KKListCardsBottomView.m in Sources */,
+				F4E640431842EC08005677FB /* KKCustomizationController.m in Sources */,
+				F4A6C97B18338CE900FEA8D8 /* KKProduct.m in Sources */,
+				F4A6C98518338CE900FEA8D8 /* KKSettingsInfoCell.m in Sources */,
+				F4A6C8DA18338CE900FEA8D8 /* KKHUD.m in Sources */,
+				F4E640391842A9CB005677FB /* KKLoginViewController.m in Sources */,
+				F4A6C8D918338CE900FEA8D8 /* KKConditionalRunner.m in Sources */,
+				F4A6C8D818338CE900FEA8D8 /* KKCollectionViewSettingsLayout.m in Sources */,
+				F4A6C98618338CE900FEA8D8 /* KKCardsPageControl.m in Sources */,
+				F4D011841834986E00FDAFC2 /* SBDrawingHelpers.m in Sources */,
+				F4427BC9184733E900D2D40F /* KKPullToRefreshContentView.m in Sources */,
+				F4A6C98318338CE900FEA8D8 /* KKSettingsButtonCell.m in Sources */,
+				F4A6C99018338CE900FEA8D8 /* KKWelcomeHUDView.m in Sources */,
+				F4A6C98E18338CE900FEA8D8 /* KKTownScrollView.m in Sources */,
+				F4A6C97518338CE900FEA8D8 /* KKAppDelegate.m in Sources */,
+				F4A6C97918338CE900FEA8D8 /* KKCard.m in Sources */,
+				F4B2C9B2184990BA00473239 /* KKAppPrivate.m in Sources */,
+				F4A6C97A18338CE900FEA8D8 /* KKLibrary.m in Sources */,
+				F4A6C98718338CE900FEA8D8 /* KKCardsView.m in Sources */,
+				F4A6C97418338CE900FEA8D8 /* KKApp.m in Sources */,
+				F4A6C98018338CE900FEA8D8 /* KKCardSegmentProductCell.m in Sources */,
+				F4A6C8D618338CE900FEA8D8 /* NSDate+KKExtras.m in Sources */,
+				F4B2C9A61849758700473239 /* KKCardFlowLayout.m in Sources */,
+				F4A6C98D18338CE900FEA8D8 /* KKSpinnerLayer.m in Sources */,
+				F4A6C97818338CE900FEA8D8 /* main.m in Sources */,
+				F4D0117B18348DED00FDAFC2 /* CAAnimation+SBExtras.m in Sources */,
+				F4A6C8D718338CE900FEA8D8 /* KKAPISessionManager.m in Sources */,
+				F4B2C9AC1849775B00473239 /* KKCardGradientDecorationView.m in Sources */,
+				F4E6403C1842E31B005677FB /* KKCardsViewController.m in Sources */,
+				F4B2C9AF18498A9900473239 /* KKCardSeparatorDecorationView.m in Sources */,
+				F4D011811834925D00FDAFC2 /* SBKeychain.m in Sources */,
+				F4A6C97D18338CE900FEA8D8 /* KKViewController.m in Sources */,
+				F4A6C97F18338CE900FEA8D8 /* KKCardCell.m in Sources */,
+				F4A6C98F18338CE900FEA8D8 /* KKTownView.m in Sources */,
+				F4A6C98418338CE900FEA8D8 /* KKSettingsCell.m in Sources */,
+				F4A6C98C18338CE900FEA8D8 /* KKNumberLabel.m in Sources */,
+				F4A6C98B18338CE900FEA8D8 /* KKLoginView.m in Sources */,
+				F4A6C97E18338CE900FEA8D8 /* KKBackgroundViewController.m in Sources */,
+				F4D0117E18348DF600FDAFC2 /* NSObject+SBExtras.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4DF791418338C7A00B333DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F4DF791E18338C7A00B333DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4DF78F618338C7A00B333DD /* Kortkoll */;
+			targetProxy = F4DF791D18338C7A00B333DD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F4A6C7FD18338CE800FEA8D8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4A6C7FE18338CE800FEA8D8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F4D0117618348D5200FDAFC2 /* Beta */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Beta;
+		};
+		F4D0117718348D5200FDAFC2 /* Beta */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A85804EAE2244FCA927696BE /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = Kortkoll/Kortkoll.entitlements;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/simon/Dev/kortkoll/Vendor/Crashlytics,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Kortkoll/Kortkoll-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"BETA=1",
+				);
+				INFOPLIST_FILE = "Kortkoll/Kortkoll-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/simon/Dev/kortkoll/Vendor/Localytics,
+				);
+				OTHER_CFLAGS = (
+					"-Wall",
+					"-Wno-objc-missing-property-synthesis",
+					"-Wno-idiomatic-parentheses",
+					"-Wno-direct-ivar-access",
+					"-Wno-assign-enum",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Beta;
+		};
+		F4D0117818348D5200FDAFC2 /* Beta */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Kortkoll.app/Kortkoll";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Kortkoll/Kortkoll-Prefix.pch";
+				INFOPLIST_FILE = "KortkollTests/KortkollTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Beta;
+		};
+		F4DF792718338C7A00B333DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F4DF792818338C7A00B333DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F4DF792A18338C7A00B333DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A85804EAE2244FCA927696BE /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = Kortkoll/Kortkoll.entitlements;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/simon/Dev/kortkoll/Vendor/Crashlytics,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Kortkoll/Kortkoll-Prefix.pch";
+				INFOPLIST_FILE = "Kortkoll/Kortkoll-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/simon/Dev/kortkoll/Vendor/Localytics,
+				);
+				OTHER_CFLAGS = (
+					"-Wall",
+					"-Wno-objc-missing-property-synthesis",
+					"-Wno-idiomatic-parentheses",
+					"-Wno-direct-ivar-access",
+					"-Wno-assign-enum",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F4DF792B18338C7A00B333DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A85804EAE2244FCA927696BE /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = Kortkoll/Kortkoll.entitlements;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/simon/Dev/kortkoll/Vendor/Crashlytics,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Kortkoll/Kortkoll-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"LIVE=1",
+				);
+				INFOPLIST_FILE = "Kortkoll/Kortkoll-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/simon/Dev/kortkoll/Vendor/Localytics,
+				);
+				OTHER_CFLAGS = (
+					"-Wall",
+					"-Wno-objc-missing-property-synthesis",
+					"-Wno-idiomatic-parentheses",
+					"-Wno-direct-ivar-access",
+					"-Wno-assign-enum",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F4DF792D18338C7A00B333DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Kortkoll.app/Kortkoll";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Kortkoll/Kortkoll-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "KortkollTests/KortkollTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		F4DF792E18338C7A00B333DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Kortkoll.app/Kortkoll";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Kortkoll/Kortkoll-Prefix.pch";
+				INFOPLIST_FILE = "KortkollTests/KortkollTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F4DF78F218338C7A00B333DD /* Build configuration list for PBXProject "Kortkoll" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4DF792718338C7A00B333DD /* Debug */,
+				F4DF792818338C7A00B333DD /* Release */,
+				F4D0117618348D5200FDAFC2 /* Beta */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4DF792918338C7A00B333DD /* Build configuration list for PBXNativeTarget "Kortkoll" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4DF792A18338C7A00B333DD /* Debug */,
+				F4DF792B18338C7A00B333DD /* Release */,
+				F4D0117718348D5200FDAFC2 /* Beta */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4DF792C18338C7A00B333DD /* Build configuration list for PBXNativeTarget "KortkollTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4DF792D18338C7A00B333DD /* Debug */,
+				F4DF792E18338C7A00B333DD /* Release */,
+				F4D0117818348D5200FDAFC2 /* Beta */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F4DF78EF18338C7A00B333DD /* Project object */;
+}
