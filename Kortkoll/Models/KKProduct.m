@@ -7,6 +7,7 @@
 //
 
 #import "KKProduct.h"
+#import "NSDate+KKExtras.h"
 
 @implementation KKProduct
 
@@ -23,6 +24,10 @@
             @"type":@"30-dagarsbiljett Helt"
           }
                              error:NULL];
+}
+
+- (BOOL)isValid {
+    return [[NSDate date] kk_daysToDate:self.endDate] >= 0;
 }
 
 #pragma mark - MTLJSONSerializing
