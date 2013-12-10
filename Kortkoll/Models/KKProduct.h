@@ -18,5 +18,6 @@
 @property (nonatomic, copy) NSString *type;
 
 + (instancetype)mock;
+- (BOOL)isValid;
 
 @end
