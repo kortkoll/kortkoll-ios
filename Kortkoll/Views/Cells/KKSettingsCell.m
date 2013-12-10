@@ -54,6 +54,7 @@
   return _layout;
 }
 
+#warning Temporary, we should be using the collection view here instead with a nice layout.
 - (UIScrollView *)scrollView {
   if (!_scrollView) {
     _scrollView = [[UIScrollView alloc] initWithFrame:self.bounds];
@@ -61,7 +62,6 @@
     [_scrollView setContentSize:self.bounds.size];
     [_scrollView setAlwaysBounceVertical:YES];
     
-#warning temp
     KKSettingsButtonCell *cell = [[KKSettingsButtonCell alloc] initWithFrame:CGRectMake(0.f, CGRectGetHeight(self.bounds)-[KKSettingsButtonCell height]-48.f, CGRectGetWidth(self.bounds), [KKSettingsButtonCell height])];
     [cell.button setTitle:@"Logga ut" forState:UIControlStateNormal];
  
