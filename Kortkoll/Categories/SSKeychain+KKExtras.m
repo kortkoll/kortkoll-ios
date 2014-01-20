@@ -14,7 +14,7 @@
   SSKeychainQuery *query = [SSKeychainQuery new];
   [query setService:[[NSBundle mainBundle] bundleIdentifier]];
   [query setAccount:account];
-  [query setSynchronizable:SSKeychainQuerySynchronizableAny];
+  [query setSynchronizationMode:SSKeychainQuerySynchronizationModeAny];
   [query fetch:NULL];
   return (NSString *)query.passwordObject; // We use this for legacy.
 }
@@ -23,7 +23,7 @@
   SSKeychainQuery *query = [SSKeychainQuery new];
   [query setService:[[NSBundle mainBundle] bundleIdentifier]];
   [query setAccount:account];
-  [query setSynchronizable:SSKeychainQuerySynchronizableAny];
+  [query setSynchronizationMode:SSKeychainQuerySynchronizationModeAny];
   [query setPasswordObject:password]; // We use this for legacy.
   
   if (!password)
