@@ -130,7 +130,7 @@
                           parameters:@{@"username":self.loginView.userNameTextField.text, @"password":self.loginView.passwordTextField.text}
                              success:^(NSURLSessionDataTask *task, id responseObject) {
                                
-                               [KKApp setUserName:self.loginView.userNameTextField.text];
+                               [KKApp setUsername:self.loginView.userNameTextField.text];
                                [KKApp setPassword:self.loginView.passwordTextField.text];
                                
                                [[KKAPISessionManager client] GET:@"cards"

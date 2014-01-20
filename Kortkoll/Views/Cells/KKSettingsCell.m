@@ -84,7 +84,7 @@
 #pragma mark - Private (TEMP)
 
 - (void)_logout:(id)sender {
-  [KKApp setUserName:nil];
+  [KKApp setUsername:nil];
   [KKApp setPassword:nil];
   [[KKLibrary library] setCards:nil];
   

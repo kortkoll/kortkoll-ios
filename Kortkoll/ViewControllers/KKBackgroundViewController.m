@@ -76,7 +76,7 @@
 #pragma mark - Private
 
 - (void)_presentViewController:(id)sender {
-  if ([KKApp password].length > 0 && [KKApp userName].length > 0) {
+  if ([KKApp password].length > 0 && [KKApp username].length > 0) {
     KKCardsViewController *cardsViewController = [KKCardsViewController new];
     
     [cardsViewController setTransitioningDelegate:cardsViewController];

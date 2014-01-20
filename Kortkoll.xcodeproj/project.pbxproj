@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3E74BAB582E649D2875DB560 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 472D8CFD95874BD680BF5CA4 /* libPods.a */; };
+		F424AF6B1857D2D60066DAEE /* SSKeychain+KKExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = F424AF6A1857D2D60066DAEE /* SSKeychain+KKExtras.m */; };
 		F4427BC9184733E900D2D40F /* KKPullToRefreshContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4427BC8184733E900D2D40F /* KKPullToRefreshContentView.m */; };
 		F4448B031834BB8600A65603 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4448B021834BB8600A65603 /* SystemConfiguration.framework */; };
 		F4448B051834BB9300A65603 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4448B041834BB9300A65603 /* AdSupport.framework */; };
@@ -63,7 +64,6 @@
 		F4D0116F18348A6400FDAFC2 /* KKMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4D0116E18348A6400FDAFC2 /* KKMain.storyboard */; };
 		F4D0117B18348DED00FDAFC2 /* CAAnimation+SBExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D0117A18348DED00FDAFC2 /* CAAnimation+SBExtras.m */; };
 		F4D0117E18348DF600FDAFC2 /* NSObject+SBExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D0117D18348DF600FDAFC2 /* NSObject+SBExtras.m */; };
-		F4D011811834925D00FDAFC2 /* SBKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D011801834925D00FDAFC2 /* SBKeychain.m */; };
 		F4D011841834986E00FDAFC2 /* SBDrawingHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D011831834986E00FDAFC2 /* SBDrawingHelpers.m */; };
 		F4D0118618349E0C00FDAFC2 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F4D0118518349E0C00FDAFC2 /* libz.dylib */; };
 		F4D0118818349EC600FDAFC2 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F4D0118718349EC600FDAFC2 /* libsqlite3.dylib */; };
@@ -90,6 +90,8 @@
 /* Begin PBXFileReference section */
 		472D8CFD95874BD680BF5CA4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A85804EAE2244FCA927696BE /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		F424AF691857D2D60066DAEE /* SSKeychain+KKExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SSKeychain+KKExtras.h"; sourceTree = "<group>"; };
+		F424AF6A1857D2D60066DAEE /* SSKeychain+KKExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SSKeychain+KKExtras.m"; sourceTree = "<group>"; };
 		F4427BC7184733E900D2D40F /* KKPullToRefreshContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKPullToRefreshContentView.h; sourceTree = "<group>"; };
 		F4427BC8184733E900D2D40F /* KKPullToRefreshContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKPullToRefreshContentView.m; sourceTree = "<group>"; };
 		F4448B021834BB8600A65603 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -183,8 +185,6 @@
 		F4D0117A18348DED00FDAFC2 /* CAAnimation+SBExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAAnimation+SBExtras.m"; sourceTree = "<group>"; };
 		F4D0117C18348DF600FDAFC2 /* NSObject+SBExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBExtras.h"; sourceTree = "<group>"; };
 		F4D0117D18348DF600FDAFC2 /* NSObject+SBExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBExtras.m"; sourceTree = "<group>"; };
-		F4D0117F1834925D00FDAFC2 /* SBKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBKeychain.h; sourceTree = "<group>"; };
-		F4D011801834925D00FDAFC2 /* SBKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBKeychain.m; sourceTree = "<group>"; };
 		F4D011821834986E00FDAFC2 /* SBDrawingHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBDrawingHelpers.h; sourceTree = "<group>"; };
 		F4D011831834986E00FDAFC2 /* SBDrawingHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBDrawingHelpers.m; sourceTree = "<group>"; };
 		F4D0118518349E0C00FDAFC2 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -278,6 +278,8 @@
 				F4D0117A18348DED00FDAFC2 /* CAAnimation+SBExtras.m */,
 				F4A6C7F018338CE800FEA8D8 /* NSDate+KKExtras.h */,
 				F4A6C7F118338CE800FEA8D8 /* NSDate+KKExtras.m */,
+				F424AF691857D2D60066DAEE /* SSKeychain+KKExtras.h */,
+				F424AF6A1857D2D60066DAEE /* SSKeychain+KKExtras.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -287,8 +289,6 @@
 			children = (
 				F4D011821834986E00FDAFC2 /* SBDrawingHelpers.h */,
 				F4D011831834986E00FDAFC2 /* SBDrawingHelpers.m */,
-				F4D0117F1834925D00FDAFC2 /* SBKeychain.h */,
-				F4D011801834925D00FDAFC2 /* SBKeychain.m */,
 				F4A6C7F318338CE800FEA8D8 /* KKAPISessionManager.h */,
 				F4A6C7F418338CE800FEA8D8 /* KKAPISessionManager.m */,
 				F4A6C7F518338CE800FEA8D8 /* KKCollectionViewSettingsLayout.h */,
@@ -485,6 +485,7 @@
 				F4DF78F518338C7A00B333DD /* Resources */,
 				1145D667ABF74D12A869B102 /* Copy Pods Resources */,
 				F4448B061834BDB500A65603 /* Crashlytics */,
+				F41F8858185A3421004D9E39 /* Pimp Info.plist */,
 			);
 			buildRules = (
 			);
@@ -620,6 +621,20 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		F41F8858185A3421004D9E39 /* Pimp Info.plist */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Pimp Info.plist";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${SRCROOT}/build_info.sh";
+		};
 		F4448B061834BDB500A65603 /* Crashlytics */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -673,7 +688,7 @@
 				F4B2C9AC1849775B00473239 /* KKCardGradientDecorationView.m in Sources */,
 				F4E6403C1842E31B005677FB /* KKCardsViewController.m in Sources */,
 				F4B2C9AF18498A9900473239 /* KKCardSeparatorDecorationView.m in Sources */,
-				F4D011811834925D00FDAFC2 /* SBKeychain.m in Sources */,
+				F424AF6B1857D2D60066DAEE /* SSKeychain+KKExtras.m in Sources */,
 				F4A6C97D18338CE900FEA8D8 /* KKViewController.m in Sources */,
 				F4A6C97F18338CE900FEA8D8 /* KKCardCell.m in Sources */,
 				F4A6C98F18338CE900FEA8D8 /* KKTownView.m in Sources */,

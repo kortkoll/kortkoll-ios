@@ -7,7 +7,7 @@
 //
 
 #import "KKApp.h"
-#import "SBKeychain.h"
+#import "SSKeychain+KKExtras.h"
 
 NSString * const KKAppBaseURL = @"https://www.kortkoll.nu/api/";
 
@@ -19,20 +19,20 @@ NSString * const KKAppPasswordKey = @"KKAppPasswordKey";
 
 @implementation KKApp
 
-+ (NSString *)userName {
-  return [SBKeychain dataForKey:KKAppUsernameKey class:NSString.class];
++ (NSString *)username {
+  return [SSKeychain kk_passwordForAccount:KKAppUsernameKey];
 }
 
-+ (void)setUserName:(NSString *)username {
-  [SBKeychain setData:username forKey:KKAppUsernameKey];
++ (void)setUsername:(NSString *)username {
+  [SSKeychain kk_setPassword:username forAccount:KKAppUsernameKey];
 }
 
 + (NSString *)password {
-  return [SBKeychain dataForKey:KKAppPasswordKey class:NSString.class];
+  return [SSKeychain kk_passwordForAccount:KKAppPasswordKey];
 }
 
 + (void)setPassword:(NSString *)password {
-  [SBKeychain setData:password forKey:KKAppPasswordKey];
+  [SSKeychain kk_setPassword:password forAccount:KKAppPasswordKey];
 }
 
 @end

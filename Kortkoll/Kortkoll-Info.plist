@@ -34,7 +34,17 @@
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>137</string>
+	<string>1337</string>
+	<key>KKBuildTimeStamp</key>
+	<string></string>
+	<key>KKGitBranch</key>
+	<string></string>
+	<key>KKGitCommitCount</key>
+	<string></string>
+	<key>KKGitHash</key>
+	<string></string>
+	<key>KKGitTag</key>
+	<string></string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UIAppFonts</key>

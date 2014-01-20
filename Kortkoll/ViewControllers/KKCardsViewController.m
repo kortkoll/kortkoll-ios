@@ -118,10 +118,10 @@
 }
 
 - (void)_updateAction:(id)sender {
-  if ([KKApp userName] && [KKApp password] && self.bottomView.state != KKListCardsBottomViewStateLoading) {
+  if ([KKApp username] && [KKApp password] && self.bottomView.state != KKListCardsBottomViewStateLoading) {
     [self.bottomView setState:KKListCardsBottomViewStateLoading];
     [[KKAPISessionManager client] POST:@"session"
-                            parameters:@{@"username":[KKApp userName], @"password":[KKApp password]}
+                            parameters:@{@"username":[KKApp username], @"password":[KKApp password]}
                                success:^(NSURLSessionDataTask *task, id responseObject) {
                                  [[KKAPISessionManager client] GET:@"cards"
                                                         parameters:nil

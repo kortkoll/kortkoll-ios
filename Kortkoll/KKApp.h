@@ -26,8 +26,8 @@ extern NSString * const KKUserDidLoginNotification; // Posted when the dismiss o
 extern NSString * const KKUserDidLogoutNotification;
 
 @interface KKApp : NSObject
-+ (NSString *)userName;
-+ (void)setUserName:(NSString *)username;
++ (NSString *)username;
++ (void)setUsername:(NSString *)username;
 + (NSString *)password;
 + (void)setPassword:(NSString *)password;
 @end
