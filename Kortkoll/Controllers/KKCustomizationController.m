@@ -7,6 +7,7 @@
 //
 
 #import "KKCustomizationController.h"
+#import "KKCardGradientDecorationView.h"
 
 @implementation KKCustomizationController
 
@@ -14,10 +15,8 @@
   UIWindow *statusBarWindow = [[UIApplication sharedApplication] valueForKey:[NSString stringWithFormat:@"%@Window", @"statusBar"]];
   
   if (statusBarWindow && [statusBarWindow isKindOfClass:[UIWindow class]]) {
-    UINavigationBar *statusBarBackgroundView = [[UINavigationBar alloc] initWithFrame:CGRectMake(0.f, 0.f, CGRectGetWidth(statusBarWindow.bounds), 20.f)];
-    [statusBarBackgroundView setTranslucent:YES];
-    [statusBarBackgroundView setBarStyle:UIBarStyleBlack];
-    [statusBarBackgroundView setBarTintColor:[[UIColor kk_darkTextColor] colorWithAlphaComponent:.5f]];
+    KKCardGradientDecorationView *statusBarBackgroundView = [[KKCardGradientDecorationView alloc] initWithFrame:CGRectMake(0.f, 0.f, CGRectGetWidth(statusBarWindow.bounds), 20.f)];
+    [statusBarBackgroundView setColors:@[[UIColor colorWithWhite:1 alpha:.9], [UIColor colorWithWhite:1 alpha:.6]]];
     
     [statusBarWindow insertSubview:statusBarBackgroundView atIndex:0];
   }
