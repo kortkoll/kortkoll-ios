@@ -39,6 +39,12 @@
     [self.collectionView reloadData];
   }];
   
+  [self _updateAction:self];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+  [super viewWillAppear:animated];
+  
   // Scroll to first card
   if (KKLibrary.library.cards.count > 0) {
     [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:1 inSection:0]
@@ -47,9 +53,13 @@
     [self.bottomView.pageControl setCurrentPage:1];
   }
   
-  [self _updateAction:self];
-  
   [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(_updateAction:) name:UIApplicationDidBecomeActiveNotification object:nil];
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+  [super viewDidDisappear:animated];
+  
+  [[NSNotificationCenter defaultCenter] removeObserver:self name:UIApplicationDidBecomeActiveNotification object:nil];
 }
 
 #pragma mark - Properties
@@ -107,6 +117,12 @@
     [_backgroundView setBackgroundColor:[UIColor colorWithWhite:1.f alpha:.6f]];
   }
   return _backgroundView;
+}
+
+#pragma mark - Public
+
+- (void)performFetchWithCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler {
+  
 }
 
 #pragma mark - Private

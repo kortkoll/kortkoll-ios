@@ -11,6 +11,8 @@
 #import "LocalyticsSession.h"
 #import "KKCustomizationController.h"
 #import "KKMigrationController.h"
+#import "KKCardsViewController.h"
+#import "KKBackgroundViewController.h"
 
 @implementation KKAppDelegate
 
@@ -24,6 +26,11 @@
   [KKMigrationController migrate];
   
   return YES;
+}
+
+- (void)application:(UIApplication *)application performFetchWithCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler {
+  KKBackgroundViewController *backgroundViewController = (KKBackgroundViewController *)self.window.rootViewController;
+  [backgroundViewController.cardsViewController performFetchWithCompletionHandler:completionHandler];
 }
 
 #ifdef LIVE

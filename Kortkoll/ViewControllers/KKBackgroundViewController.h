@@ -8,5 +8,8 @@
 
 #import "KKViewController.h"
 
+@class KKCardsViewController;
+
 @interface KKBackgroundViewController : KKViewController
+@property (nonatomic, strong) KKCardsViewController *cardsViewController;
 @end

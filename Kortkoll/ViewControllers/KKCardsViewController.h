@@ -9,5 +9,5 @@
 #import "KKViewController.h"
 
 @interface KKCardsViewController : KKViewController <UIViewControllerTransitioningDelegate>
-
+- (void)performFetchWithCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler;
 @end

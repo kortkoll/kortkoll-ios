@@ -30,6 +30,10 @@
   
   [self.view addSubview:self.scrollView];
   [self.view addSubview:self.statusBarBackgroundView];
+  
+  [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(_presentViewController:)
+                                               name:KKUserDidLogoutNotification
+                                             object:self.cardsViewController];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -73,18 +77,21 @@
   return _scrollView;
 }
 
+- (KKCardsViewController *)cardsViewController {
+  if (!_cardsViewController) {
+    _cardsViewController = [KKCardsViewController new];
+    
+    [_cardsViewController setTransitioningDelegate:_cardsViewController];
+    [_cardsViewController setModalPresentationStyle:UIModalPresentationCustom];
+  }
+  return _cardsViewController;
+}
+
 #pragma mark - Private
 
 - (void)_presentViewController:(id)sender {
   if ([KKApp password].length > 0 && [KKApp username].length > 0) {
-    KKCardsViewController *cardsViewController = [KKCardsViewController new];
-    
-    [cardsViewController setTransitioningDelegate:cardsViewController];
-    [cardsViewController setModalPresentationStyle:UIModalPresentationCustom];
-    
-    [self presentViewController:cardsViewController animated:YES completion:nil];
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(_presentViewController:) name:KKUserDidLogoutNotification object:cardsViewController];
+    [self presentViewController:self.cardsViewController animated:YES completion:nil];
   } else {
     KKLoginViewController *loginViewController = [KKLoginViewController new];
 
