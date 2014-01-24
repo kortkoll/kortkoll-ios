@@ -23,9 +23,8 @@
   SSKeychainQuery *query = [SSKeychainQuery new];
   [query setService:[[NSBundle mainBundle] bundleIdentifier]];
   [query setAccount:account];
-  [query setSynchronizationMode:SSKeychainQuerySynchronizationModeYes];
+  [query setSynchronizationMode:SSKeychainQuerySynchronizationModeAny];
   [query setPassword:password];
-  
   if (!password)
     [query deleteItem:NULL];
   else
