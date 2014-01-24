@@ -16,7 +16,7 @@
   
   if (statusBarWindow && [statusBarWindow isKindOfClass:[UIWindow class]]) {
     KKCardGradientDecorationView *statusBarBackgroundView = [[KKCardGradientDecorationView alloc] initWithFrame:CGRectMake(0.f, 0.f, CGRectGetWidth(statusBarWindow.bounds), 20.f)];
-    [statusBarBackgroundView setColors:@[[UIColor colorWithWhite:1 alpha:.9], [UIColor colorWithWhite:1 alpha:.6]]];
+    [statusBarBackgroundView setColors:@[[UIColor colorWithWhite:1 alpha:1], [UIColor colorWithWhite:1 alpha:0]]];
     
     [statusBarWindow insertSubview:statusBarBackgroundView atIndex:0];
   }

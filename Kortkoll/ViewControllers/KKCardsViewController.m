@@ -112,11 +112,8 @@
 
 - (UIView *)backgroundView {
   if (!_backgroundView) {
-    _backgroundView = [[UIView alloc] initWithFrame:CGRectMake(0.f,
-                                                               20.f,
-                                                               CGRectGetWidth(self.view.bounds),
-                                                               CGRectGetHeight(self.view.bounds)-20.f)];
-    [_backgroundView setBackgroundColor:[UIColor colorWithWhite:1.f alpha:.6f]];
+    _backgroundView = [[UIView alloc] initWithFrame:self.view.bounds];
+    [_backgroundView setBackgroundColor:[UIColor colorWithWhite:1.f alpha:.5f]];
   }
   return _backgroundView;
 }
@@ -194,7 +191,7 @@
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
   
   // Background alpha
-  CGFloat max = .6f;
+  CGFloat max = .5f;
   CGFloat lol = 0.f;
   
   if (scrollView.contentOffset.x < 0.f)
