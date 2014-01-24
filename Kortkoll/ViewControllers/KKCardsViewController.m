@@ -154,7 +154,7 @@
                                  [[KKAPISessionManager client] GET:@"cards"
                                                         parameters:nil
                                                            success:^(NSURLSessionDataTask *task, id responseObject) {
-                                                             [self.bottomView setState:KKListCardsBottomViewStateDefault];
+                                                              [self.bottomView setState:KKListCardsBottomViewStateDefault];
                                                              
                                                              [KKLibrary.library setUnparsedCards:responseObject];
                                                              

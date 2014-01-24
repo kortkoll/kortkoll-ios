@@ -26,8 +26,10 @@
                              error:NULL];
 }
 
-- (BOOL)isValid {
-    return [[NSDate date] kk_daysToDate:self.endDate] >= 0;
+#pragma mark - Properties
+
+- (BOOL)valid {
+    return [[NSDate date] kk_daysToDate:self.endDate] >= 0 && self.active;
 }
 
 #pragma mark - MTLJSONSerializing
@@ -36,7 +38,8 @@
   return @{
            @"endDate":@"end_date",
            @"startDate":@"start_date",
-           @"identifier":@"id"
+           @"identifier":@"id",
+           @"valid":NSNull.null,
            };
 }
 

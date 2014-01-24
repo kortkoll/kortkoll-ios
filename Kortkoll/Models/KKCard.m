@@ -26,7 +26,7 @@
 
 - (void)setProducts:(NSArray *)products {
     _products = [products filteredArrayUsingPredicate:[NSPredicate predicateWithBlock:^BOOL(KKProduct *product, NSDictionary *bindings) {
-        return [product isValid];
+      return product.valid;
     }]];
 }
 
