@@ -144,6 +144,8 @@
                                                            
                                                            [[LocalyticsSession shared] tagEvent:@"Logged In"];
                                                            
+                                                           [[UIApplication sharedApplication] setMinimumBackgroundFetchInterval:KKMinimumBackgroundFetchInterval];
+                                                           
                                                            [self dismissViewControllerAnimated:YES completion:^{
                                                              [[NSNotificationCenter defaultCenter] postNotificationName:KKUserDidLoginNotification object:self];
                                                            }];

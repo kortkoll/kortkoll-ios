@@ -24,6 +24,8 @@
 @property (nonatomic, strong) UIView *backgroundView;
 
 @property (nonatomic, strong) KKListCardsBottomView *bottomView;
+
+@property (nonatomic, copy) void(^fetchCompletionHandler)(UIBackgroundFetchResult);
 @end
 
 @implementation KKCardsViewController
@@ -122,7 +124,8 @@
 #pragma mark - Public
 
 - (void)performFetchWithCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler {
-  
+  [self setFetchCompletionHandler:completionHandler];
+  [self _updateAction:self];
 }
 
 #pragma mark - Private
@@ -134,7 +137,16 @@
 }
 
 - (void)_updateAction:(id)sender {
-  if (self.bottomView.state != KKListCardsBottomViewStateLoading && [KKLibrary.library.refreshDate timeIntervalSinceNow] < -KKAppRefreshDelta) {
+  if (self.bottomView.state != KKListCardsBottomViewStateLoading && [KKLibrary.library.refreshDate timeIntervalSinceNow] < -KKRefreshDelta) {
+    
+    // This is kind of an ugly hack.
+    [KKLibrary.library setRefreshDate:[NSDate date]];
+    
+    void (^failure)(NSURLSessionDataTask *, NSError *) = ^(NSURLSessionDataTask *task, NSError *error) {
+      [self.bottomView setState:KKListCardsBottomViewStateDefault];
+      if (self.fetchCompletionHandler) self.fetchCompletionHandler(UIBackgroundFetchResultFailed);
+    };
+    
     [self.bottomView setState:KKListCardsBottomViewStateLoading];
     [[KKAPISessionManager client] POST:@"session"
                             parameters:@{@"username":[KKApp username], @"password":[KKApp password]}
@@ -145,13 +157,12 @@
                                                              [self.bottomView setState:KKListCardsBottomViewStateDefault];
                                                              
                                                              [KKLibrary.library setUnparsedCards:responseObject];
-                                                           } failure:^(NSURLSessionDataTask *task, NSError *error) {
-                                                             [self.bottomView setState:KKListCardsBottomViewStateDefault];
-                                                           }];
-                               } failure:^(NSURLSessionDataTask *task, NSError *error) {
-                                 [self.bottomView setState:KKListCardsBottomViewStateDefault];
-                               }];
-  }
+                                                             
+                                                             if (self.fetchCompletionHandler) self.fetchCompletionHandler(UIBackgroundFetchResultNewData);
+                                                           } failure:failure];
+                               } failure:failure];
+  } else
+    if (self.fetchCompletionHandler) self.fetchCompletionHandler(UIBackgroundFetchResultNoData);
 }
 
 #pragma mark - UICollectionViewDataSource

@@ -17,7 +17,8 @@ NSString * const KKUserDidLogoutNotification = @"KKUserDidLogoutNotification";
 NSString * const KKAppUsernameKey = @"KKAppUsernameKey";
 NSString * const KKAppPasswordKey = @"KKAppPasswordKey";
 
-const NSTimeInterval KKAppRefreshDelta = 10.;
+const NSTimeInterval KKRefreshDelta = 10.;
+const NSTimeInterval KKMinimumBackgroundFetchInterval = 60.*60.*2;
 
 @implementation KKApp
 

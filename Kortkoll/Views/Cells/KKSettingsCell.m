@@ -63,6 +63,8 @@
   [KKApp setPassword:nil];
   [[KKLibrary library] setCards:nil];
   
+  [[UIApplication sharedApplication] setMinimumBackgroundFetchInterval:UIApplicationBackgroundFetchIntervalNever];
+  
   [self.viewController dismissViewControllerAnimated:YES completion:^{
     [[NSNotificationCenter defaultCenter] postNotificationName:KKUserDidLogoutNotification object:self.viewController];
   }];

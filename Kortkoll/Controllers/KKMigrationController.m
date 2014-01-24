@@ -13,8 +13,9 @@
 @implementation KKMigrationController
 
 + (void)migrate {
-  // Resave kechain items to make them icloud synchronizable.
   [MTMigration migrateToVersion:@"1.2" block:^{
+    
+    // Resave kechain items to make them icloud synchronizable.
     NSString * (^passwordForAccount)(NSString *) = ^NSString * (NSString *account) {
       SSKeychainQuery *query = [SSKeychainQuery new];
       [query setService:[[NSBundle mainBundle] bundleIdentifier]];
@@ -31,9 +32,14 @@
     NSString *username = passwordForAccount(KKAppUsernameKey);
     NSString *password = passwordForAccount(KKAppPasswordKey);
     
-    if (username && password) {
+    if (username.length > 0 && password.length > 0) {
       [KKApp setUsername:username];
       [KKApp setPassword:password];
+    }
+    
+    // Register for background fetch.
+    if (username.length > 0 && password.length > 0) {
+      [[UIApplication sharedApplication] setMinimumBackgroundFetchInterval:KKMinimumBackgroundFetchInterval];
     }
   }];
 }
