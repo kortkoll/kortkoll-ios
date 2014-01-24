@@ -20,7 +20,12 @@
       [query setService:[[NSBundle mainBundle] bundleIdentifier]];
       [query setAccount:account];
       [query fetch:NULL];
-      return (NSString *)query.passwordObject;
+      
+      NSString *password = (NSString *)query.passwordObject;
+      
+      [query deleteItem:NULL];
+      
+      return password;
     };
     
     NSString *username = passwordForAccount(KKAppUsernameKey);
