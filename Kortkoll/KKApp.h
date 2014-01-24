@@ -25,6 +25,9 @@ extern NSString * const KKAppBaseURL;
 extern NSString * const KKUserDidLoginNotification; // Posted when the dismiss of login notification is done.
 extern NSString * const KKUserDidLogoutNotification;
 
+extern NSString * const KKAppUsernameKey; // Used in the migration.
+extern NSString * const KKAppPasswordKey;
+
 @interface KKApp : NSObject
 + (NSString *)username;
 + (void)setUsername:(NSString *)username;

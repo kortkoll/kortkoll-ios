@@ -9,7 +9,6 @@
 #import "KKCardCell.h"
 #import "KKCard.h"
 #import "KKCardSegmentProductCell.h"
-#import "SSPullToRefreshView.h"
 #import "KKPullToRefreshContentView.h"
 #import "KKCardFlowLayout.h"
 #import "KKCardGradientDecorationView.h"

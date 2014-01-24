@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		3E74BAB582E649D2875DB560 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 472D8CFD95874BD680BF5CA4 /* libPods.a */; };
 		F424AF6B1857D2D60066DAEE /* SSKeychain+KKExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = F424AF6A1857D2D60066DAEE /* SSKeychain+KKExtras.m */; };
-		F4427BC9184733E900D2D40F /* KKPullToRefreshContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4427BC8184733E900D2D40F /* KKPullToRefreshContentView.m */; };
 		F4448B031834BB8600A65603 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4448B021834BB8600A65603 /* SystemConfiguration.framework */; };
 		F4448B051834BB9300A65603 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4448B041834BB9300A65603 /* AdSupport.framework */; };
 		F44E02D11846B1340017365F /* libLocalyticsAMP_x64.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F44E02D01846B1340017365F /* libLocalyticsAMP_x64.a */; };
@@ -93,8 +92,6 @@
 		A85804EAE2244FCA927696BE /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		F424AF691857D2D60066DAEE /* SSKeychain+KKExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SSKeychain+KKExtras.h"; sourceTree = "<group>"; };
 		F424AF6A1857D2D60066DAEE /* SSKeychain+KKExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SSKeychain+KKExtras.m"; sourceTree = "<group>"; };
-		F4427BC7184733E900D2D40F /* KKPullToRefreshContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKPullToRefreshContentView.h; sourceTree = "<group>"; };
-		F4427BC8184733E900D2D40F /* KKPullToRefreshContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKPullToRefreshContentView.m; sourceTree = "<group>"; };
 		F4448B021834BB8600A65603 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		F4448B041834BB9300A65603 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		F44E02D01846B1340017365F /* libLocalyticsAMP_x64.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libLocalyticsAMP_x64.a; sourceTree = "<group>"; };
@@ -389,8 +386,6 @@
 				F4A6C8D318338CE900FEA8D8 /* KKTownView.m */,
 				F4A6C8D418338CE900FEA8D8 /* KKWelcomeHUDView.h */,
 				F4A6C8D518338CE900FEA8D8 /* KKWelcomeHUDView.m */,
-				F4427BC7184733E900D2D40F /* KKPullToRefreshContentView.h */,
-				F4427BC8184733E900D2D40F /* KKPullToRefreshContentView.m */,
 				F4B2C9AA1849775B00473239 /* KKCardGradientDecorationView.h */,
 				F4B2C9AB1849775B00473239 /* KKCardGradientDecorationView.m */,
 				F4B2C9AD18498A9900473239 /* KKCardSeparatorDecorationView.h */,
@@ -675,7 +670,6 @@
 				F4A6C98618338CE900FEA8D8 /* KKCardsPageControl.m in Sources */,
 				F4D011841834986E00FDAFC2 /* SBDrawingHelpers.m in Sources */,
 				F4AC60731892410300171C2F /* KKMigrationController.m in Sources */,
-				F4427BC9184733E900D2D40F /* KKPullToRefreshContentView.m in Sources */,
 				F4A6C98318338CE900FEA8D8 /* KKSettingsButtonCell.m in Sources */,
 				F4A6C99018338CE900FEA8D8 /* KKWelcomeHUDView.m in Sources */,
 				F4A6C98E18338CE900FEA8D8 /* KKTownScrollView.m in Sources */,
