@@ -21,26 +21,15 @@
     [[NSFileManager defaultManager] createDirectoryAtPath:self.dir withIntermediateDirectories:YES attributes:nil error:NULL];
     
     NSData *encodedCards = [NSData dataWithContentsOfFile:[self.dir stringByAppendingPathComponent:@"Cards"]];
+    NSData *encodedDate = [NSData dataWithContentsOfFile:[self.dir stringByAppendingPathComponent:@"RefreshDate"]];
     
     if (encodedCards)
       [self setCards:[NSKeyedUnarchiver unarchiveObjectWithData:encodedCards]];
+    
+    if (encodedDate)
+      [self setRefreshDate:[NSKeyedUnarchiver unarchiveObjectWithData:encodedDate]];
   }
   return self;
-}
-
-- (void)setCards:(NSArray *)cards {
-  _cards = [cards copy];
-  
-  dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
-    NSString *path = [self.dir stringByAppendingPathComponent:@"Cards"];
-    
-    if (self.cards) {
-      NSData *encodedStations = [NSKeyedArchiver archivedDataWithRootObject:self.cards];
-      [encodedStations writeToFile:path options:0 error:NULL];
-    } else {
-      [[NSFileManager defaultManager] removeItemAtPath:path error:NULL];
-    }
-  });
 }
 
 - (void)setUnparsedCards:(NSArray *)cards {
@@ -49,6 +38,23 @@
     [array addObject:[MTLJSONAdapter modelOfClass:KKCard.class fromJSONDictionary:cardDict error:NULL]];
   
   [self setCards:array];
+  [self setRefreshDate:[NSDate date]];
+  
+  dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
+      NSString *cardsPath = [self.dir stringByAppendingPathComponent:@"Cards"];
+      NSString *datePath = [self.dir stringByAppendingPathComponent:@"RefreshDate"];
+    
+    if (self.cards.count) {
+      NSData *encodedCards = [NSKeyedArchiver archivedDataWithRootObject:self.cards];
+      [encodedCards writeToFile:cardsPath options:0 error:NULL];
+      
+      NSData *encodedDate = [NSKeyedArchiver archivedDataWithRootObject:self.refreshDate];
+      [encodedDate writeToFile:datePath options:0 error:NULL];
+    } else {
+      [[NSFileManager defaultManager] removeItemAtPath:cardsPath error:NULL];
+      [[NSFileManager defaultManager] removeItemAtPath:datePath error:NULL];
+    }
+  });
 }
 
 + (instancetype)library {

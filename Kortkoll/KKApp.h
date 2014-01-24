@@ -28,6 +28,8 @@ extern NSString * const KKUserDidLogoutNotification;
 extern NSString * const KKAppUsernameKey; // Used in the migration.
 extern NSString * const KKAppPasswordKey;
 
+extern const NSTimeInterval KKAppRefreshDelta;
+
 @interface KKApp : NSObject
 + (NSString *)username;
 + (void)setUsername:(NSString *)username;

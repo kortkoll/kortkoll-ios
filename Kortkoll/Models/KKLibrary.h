@@ -10,6 +10,7 @@
 
 @interface KKLibrary : NSObject
 @property (nonatomic, copy) NSArray *cards;
+@property (nonatomic, copy) NSDate *refreshDate;
 
 + (instancetype)library;
 

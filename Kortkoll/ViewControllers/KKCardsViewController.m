@@ -118,7 +118,7 @@
 }
 
 - (void)_updateAction:(id)sender {
-  if ([KKApp username] && [KKApp password] && self.bottomView.state != KKListCardsBottomViewStateLoading) {
+  if (self.bottomView.state != KKListCardsBottomViewStateLoading && [KKLibrary.library.refreshDate timeIntervalSinceNow] < -KKAppRefreshDelta) {
     [self.bottomView setState:KKListCardsBottomViewStateLoading];
     [[KKAPISessionManager client] POST:@"session"
                             parameters:@{@"username":[KKApp username], @"password":[KKApp password]}
