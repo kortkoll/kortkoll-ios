@@ -46,6 +46,7 @@
 		F4A6C98F18338CE900FEA8D8 /* KKTownView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A6C8D318338CE900FEA8D8 /* KKTownView.m */; };
 		F4A6C99018338CE900FEA8D8 /* KKWelcomeHUDView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A6C8D518338CE900FEA8D8 /* KKWelcomeHUDView.m */; };
 		F4A6C9DE18338D3D00FEA8D8 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4A6C99318338D3C00FEA8D8 /* Crashlytics.framework */; };
+		F4AC60731892410300171C2F /* KKMigrationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4AC60721892410300171C2F /* KKMigrationController.m */; };
 		F4B2C9A61849758700473239 /* KKCardFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B2C9A51849758700473239 /* KKCardFlowLayout.m */; };
 		F4B2C9AC1849775B00473239 /* KKCardGradientDecorationView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B2C9AB1849775B00473239 /* KKCardGradientDecorationView.m */; };
 		F4B2C9AF18498A9900473239 /* KKCardSeparatorDecorationView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B2C9AE18498A9900473239 /* KKCardSeparatorDecorationView.m */; };
@@ -161,6 +162,8 @@
 		F4A6C8D518338CE900FEA8D8 /* KKWelcomeHUDView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKWelcomeHUDView.m; sourceTree = "<group>"; };
 		F4A6C99318338D3C00FEA8D8 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		F4A6C99818338D3D00FEA8D8 /* LocalyticsSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalyticsSession.h; sourceTree = "<group>"; };
+		F4AC60711892410300171C2F /* KKMigrationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKMigrationController.h; sourceTree = "<group>"; };
+		F4AC60721892410300171C2F /* KKMigrationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKMigrationController.m; sourceTree = "<group>"; };
 		F4B2C9A41849758700473239 /* KKCardFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKCardFlowLayout.h; sourceTree = "<group>"; };
 		F4B2C9A51849758700473239 /* KKCardFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKCardFlowLayout.m; sourceTree = "<group>"; };
 		F4B2C9AA1849775B00473239 /* KKCardGradientDecorationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKCardGradientDecorationView.h; sourceTree = "<group>"; };
@@ -303,6 +306,8 @@
 				F4E640421842EC08005677FB /* KKCustomizationController.m */,
 				F4B2C9A41849758700473239 /* KKCardFlowLayout.h */,
 				F4B2C9A51849758700473239 /* KKCardFlowLayout.m */,
+				F4AC60711892410300171C2F /* KKMigrationController.h */,
+				F4AC60721892410300171C2F /* KKMigrationController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -648,6 +653,7 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = "/usr/bin/env ruby";
 			shellScript = "if ENV[\"CONFIGURATION\"] == \"Release\" || ENV[\"CONFIGURATION\"] == \"Beta\"\nsystem \"./Vendor/Crashlytics.framework/run 42438aa80e586e337df6b6c779fbf03cae38edc7\"\nend";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -668,6 +674,7 @@
 				F4A6C8D818338CE900FEA8D8 /* KKCollectionViewSettingsLayout.m in Sources */,
 				F4A6C98618338CE900FEA8D8 /* KKCardsPageControl.m in Sources */,
 				F4D011841834986E00FDAFC2 /* SBDrawingHelpers.m in Sources */,
+				F4AC60731892410300171C2F /* KKMigrationController.m in Sources */,
 				F4427BC9184733E900D2D40F /* KKPullToRefreshContentView.m in Sources */,
 				F4A6C98318338CE900FEA8D8 /* KKSettingsButtonCell.m in Sources */,
 				F4A6C99018338CE900FEA8D8 /* KKWelcomeHUDView.m in Sources */,

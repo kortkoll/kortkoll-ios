@@ -16,15 +16,15 @@
   [query setAccount:account];
   [query setSynchronizationMode:SSKeychainQuerySynchronizationModeAny];
   [query fetch:NULL];
-  return (NSString *)query.passwordObject; // We use this for legacy.
+  return query.password;
 }
 
 + (void)kk_setPassword:(NSString *)password forAccount:(NSString *)account {
   SSKeychainQuery *query = [SSKeychainQuery new];
   [query setService:[[NSBundle mainBundle] bundleIdentifier]];
   [query setAccount:account];
-  [query setSynchronizationMode:SSKeychainQuerySynchronizationModeAny];
-  [query setPasswordObject:password]; // We use this for legacy.
+  [query setSynchronizationMode:SSKeychainQuerySynchronizationModeYes];
+  [query setPassword:password];
   
   if (!password)
     [query deleteItem:NULL];

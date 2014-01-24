@@ -10,6 +10,7 @@
 #import <Crashlytics/Crashlytics.h>
 #import "LocalyticsSession.h"
 #import "KKCustomizationController.h"
+#import "KKMigrationController.h"
 
 @implementation KKAppDelegate
 
@@ -20,6 +21,7 @@
 #endif
 
   [KKCustomizationController customize];
+  [KKMigrationController migrate];
   
   return YES;
 }
