@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		3E74BAB582E649D2875DB560 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 472D8CFD95874BD680BF5CA4 /* libPods.a */; };
+		F40978E918925C8000FAC23E /* KKCollectionViewSettingsLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F40978E818925C8000FAC23E /* KKCollectionViewSettingsLayout.m */; };
+		F40978EC1892642900FAC23E /* KKSettingsSeparatorDecorationView.m in Sources */ = {isa = PBXBuildFile; fileRef = F40978EB1892642900FAC23E /* KKSettingsSeparatorDecorationView.m */; };
 		F424AF6B1857D2D60066DAEE /* SSKeychain+KKExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = F424AF6A1857D2D60066DAEE /* SSKeychain+KKExtras.m */; };
 		F4448B031834BB8600A65603 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4448B021834BB8600A65603 /* SystemConfiguration.framework */; };
 		F4448B051834BB9300A65603 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4448B041834BB9300A65603 /* AdSupport.framework */; };
 		F44E02D11846B1340017365F /* libLocalyticsAMP_x64.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F44E02D01846B1340017365F /* libLocalyticsAMP_x64.a */; };
 		F4A6C8D618338CE900FEA8D8 /* NSDate+KKExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A6C7F118338CE800FEA8D8 /* NSDate+KKExtras.m */; };
 		F4A6C8D718338CE900FEA8D8 /* KKAPISessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A6C7F418338CE800FEA8D8 /* KKAPISessionManager.m */; };
-		F4A6C8D818338CE900FEA8D8 /* KKCollectionViewSettingsLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A6C7F618338CE800FEA8D8 /* KKCollectionViewSettingsLayout.m */; };
 		F4A6C8D918338CE900FEA8D8 /* KKConditionalRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A6C7F818338CE800FEA8D8 /* KKConditionalRunner.m */; };
 		F4A6C8DA18338CE900FEA8D8 /* KKHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A6C7FA18338CE800FEA8D8 /* KKHUD.m */; };
 		F4A6C8DB18338CE900FEA8D8 /* KKText.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A6C7FC18338CE800FEA8D8 /* KKText.m */; };
@@ -90,6 +91,10 @@
 /* Begin PBXFileReference section */
 		472D8CFD95874BD680BF5CA4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A85804EAE2244FCA927696BE /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		F40978E718925C8000FAC23E /* KKCollectionViewSettingsLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKCollectionViewSettingsLayout.h; sourceTree = "<group>"; };
+		F40978E818925C8000FAC23E /* KKCollectionViewSettingsLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKCollectionViewSettingsLayout.m; sourceTree = "<group>"; };
+		F40978EA1892642900FAC23E /* KKSettingsSeparatorDecorationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKSettingsSeparatorDecorationView.h; sourceTree = "<group>"; };
+		F40978EB1892642900FAC23E /* KKSettingsSeparatorDecorationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKSettingsSeparatorDecorationView.m; sourceTree = "<group>"; };
 		F424AF691857D2D60066DAEE /* SSKeychain+KKExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SSKeychain+KKExtras.h"; sourceTree = "<group>"; };
 		F424AF6A1857D2D60066DAEE /* SSKeychain+KKExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SSKeychain+KKExtras.m"; sourceTree = "<group>"; };
 		F4448B021834BB8600A65603 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -99,8 +104,6 @@
 		F4A6C7F118338CE800FEA8D8 /* NSDate+KKExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+KKExtras.m"; sourceTree = "<group>"; };
 		F4A6C7F318338CE800FEA8D8 /* KKAPISessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKAPISessionManager.h; sourceTree = "<group>"; };
 		F4A6C7F418338CE800FEA8D8 /* KKAPISessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKAPISessionManager.m; sourceTree = "<group>"; };
-		F4A6C7F518338CE800FEA8D8 /* KKCollectionViewSettingsLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKCollectionViewSettingsLayout.h; sourceTree = "<group>"; };
-		F4A6C7F618338CE800FEA8D8 /* KKCollectionViewSettingsLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKCollectionViewSettingsLayout.m; sourceTree = "<group>"; };
 		F4A6C7F718338CE800FEA8D8 /* KKConditionalRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKConditionalRunner.h; sourceTree = "<group>"; };
 		F4A6C7F818338CE800FEA8D8 /* KKConditionalRunner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKConditionalRunner.m; sourceTree = "<group>"; };
 		F4A6C7F918338CE800FEA8D8 /* KKHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKHUD.h; sourceTree = "<group>"; };
@@ -233,6 +236,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F40978E618925C3F00FAC23E /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				F40978E718925C8000FAC23E /* KKCollectionViewSettingsLayout.h */,
+				F40978E818925C8000FAC23E /* KKCollectionViewSettingsLayout.m */,
+			);
+			path = Layouts;
+			sourceTree = "<group>";
+		};
 		F4448B011834A8EA00A65603 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -287,12 +299,11 @@
 		F4A6C7F218338CE800FEA8D8 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				F40978E618925C3F00FAC23E /* Layouts */,
 				F4D011821834986E00FDAFC2 /* SBDrawingHelpers.h */,
 				F4D011831834986E00FDAFC2 /* SBDrawingHelpers.m */,
 				F4A6C7F318338CE800FEA8D8 /* KKAPISessionManager.h */,
 				F4A6C7F418338CE800FEA8D8 /* KKAPISessionManager.m */,
-				F4A6C7F518338CE800FEA8D8 /* KKCollectionViewSettingsLayout.h */,
-				F4A6C7F618338CE800FEA8D8 /* KKCollectionViewSettingsLayout.m */,
 				F4A6C7F718338CE800FEA8D8 /* KKConditionalRunner.h */,
 				F4A6C7F818338CE800FEA8D8 /* KKConditionalRunner.m */,
 				F4A6C7F918338CE800FEA8D8 /* KKHUD.h */,
@@ -390,6 +401,8 @@
 				F4B2C9AB1849775B00473239 /* KKCardGradientDecorationView.m */,
 				F4B2C9AD18498A9900473239 /* KKCardSeparatorDecorationView.h */,
 				F4B2C9AE18498A9900473239 /* KKCardSeparatorDecorationView.m */,
+				F40978EA1892642900FAC23E /* KKSettingsSeparatorDecorationView.h */,
+				F40978EB1892642900FAC23E /* KKSettingsSeparatorDecorationView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -664,9 +677,9 @@
 				F4A6C97B18338CE900FEA8D8 /* KKProduct.m in Sources */,
 				F4A6C98518338CE900FEA8D8 /* KKSettingsInfoCell.m in Sources */,
 				F4A6C8DA18338CE900FEA8D8 /* KKHUD.m in Sources */,
+				F40978EC1892642900FAC23E /* KKSettingsSeparatorDecorationView.m in Sources */,
 				F4E640391842A9CB005677FB /* KKLoginViewController.m in Sources */,
 				F4A6C8D918338CE900FEA8D8 /* KKConditionalRunner.m in Sources */,
-				F4A6C8D818338CE900FEA8D8 /* KKCollectionViewSettingsLayout.m in Sources */,
 				F4A6C98618338CE900FEA8D8 /* KKCardsPageControl.m in Sources */,
 				F4D011841834986E00FDAFC2 /* SBDrawingHelpers.m in Sources */,
 				F4AC60731892410300171C2F /* KKMigrationController.m in Sources */,
@@ -681,6 +694,7 @@
 				F4A6C97418338CE900FEA8D8 /* KKApp.m in Sources */,
 				F4A6C98018338CE900FEA8D8 /* KKCardSegmentProductCell.m in Sources */,
 				F4A6C8D618338CE900FEA8D8 /* NSDate+KKExtras.m in Sources */,
+				F40978E918925C8000FAC23E /* KKCollectionViewSettingsLayout.m in Sources */,
 				F4B2C9A61849758700473239 /* KKCardFlowLayout.m in Sources */,
 				F4A6C98D18338CE900FEA8D8 /* KKSpinnerLayer.m in Sources */,
 				F4A6C97818338CE900FEA8D8 /* main.m in Sources */,

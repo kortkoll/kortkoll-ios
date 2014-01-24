@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Kortkoll. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 
 @interface KKMigrationController : NSObject
 + (void)migrate;

@@ -17,6 +17,13 @@
   return self;
 }
 
+- (void)prepareForReuse {
+  [super prepareForReuse];
+  [self.button.allTargets enumerateObjectsUsingBlock:^(id obj, BOOL *stop) {
+    [self.button removeTarget:obj action:NULL forControlEvents:UIControlEventAllEvents];
+  }];
+}
+
 - (UIButton *)button {
   if (!_button) {
     _button = [UIButton buttonWithType:UIButtonTypeCustom];
