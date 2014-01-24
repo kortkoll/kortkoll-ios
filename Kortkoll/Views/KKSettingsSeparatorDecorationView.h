@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Kortkoll. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+@import UIKit;
 
 @interface KKSettingsSeparatorDecorationView : UICollectionReusableView
 

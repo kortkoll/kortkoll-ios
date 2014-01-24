@@ -10,6 +10,7 @@
 		3E74BAB582E649D2875DB560 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 472D8CFD95874BD680BF5CA4 /* libPods.a */; };
 		F40978E918925C8000FAC23E /* KKCollectionViewSettingsLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F40978E818925C8000FAC23E /* KKCollectionViewSettingsLayout.m */; };
 		F40978EC1892642900FAC23E /* KKSettingsSeparatorDecorationView.m in Sources */ = {isa = PBXBuildFile; fileRef = F40978EB1892642900FAC23E /* KKSettingsSeparatorDecorationView.m */; };
+		F40978EF1892674D00FAC23E /* KKCollectionViewCardLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F40978EE1892674D00FAC23E /* KKCollectionViewCardLayout.m */; };
 		F424AF6B1857D2D60066DAEE /* SSKeychain+KKExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = F424AF6A1857D2D60066DAEE /* SSKeychain+KKExtras.m */; };
 		F4448B031834BB8600A65603 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4448B021834BB8600A65603 /* SystemConfiguration.framework */; };
 		F4448B051834BB9300A65603 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4448B041834BB9300A65603 /* AdSupport.framework */; };
@@ -47,7 +48,6 @@
 		F4A6C99018338CE900FEA8D8 /* KKWelcomeHUDView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A6C8D518338CE900FEA8D8 /* KKWelcomeHUDView.m */; };
 		F4A6C9DE18338D3D00FEA8D8 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4A6C99318338D3C00FEA8D8 /* Crashlytics.framework */; };
 		F4AC60731892410300171C2F /* KKMigrationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4AC60721892410300171C2F /* KKMigrationController.m */; };
-		F4B2C9A61849758700473239 /* KKCardFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B2C9A51849758700473239 /* KKCardFlowLayout.m */; };
 		F4B2C9AC1849775B00473239 /* KKCardGradientDecorationView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B2C9AB1849775B00473239 /* KKCardGradientDecorationView.m */; };
 		F4B2C9AF18498A9900473239 /* KKCardSeparatorDecorationView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B2C9AE18498A9900473239 /* KKCardSeparatorDecorationView.m */; };
 		F4B2C9B2184990BA00473239 /* KKAppPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B2C9B1184990BA00473239 /* KKAppPrivate.m */; };
@@ -95,6 +95,8 @@
 		F40978E818925C8000FAC23E /* KKCollectionViewSettingsLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKCollectionViewSettingsLayout.m; sourceTree = "<group>"; };
 		F40978EA1892642900FAC23E /* KKSettingsSeparatorDecorationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKSettingsSeparatorDecorationView.h; sourceTree = "<group>"; };
 		F40978EB1892642900FAC23E /* KKSettingsSeparatorDecorationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKSettingsSeparatorDecorationView.m; sourceTree = "<group>"; };
+		F40978ED1892674D00FAC23E /* KKCollectionViewCardLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKCollectionViewCardLayout.h; sourceTree = "<group>"; };
+		F40978EE1892674D00FAC23E /* KKCollectionViewCardLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKCollectionViewCardLayout.m; sourceTree = "<group>"; };
 		F424AF691857D2D60066DAEE /* SSKeychain+KKExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SSKeychain+KKExtras.h"; sourceTree = "<group>"; };
 		F424AF6A1857D2D60066DAEE /* SSKeychain+KKExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SSKeychain+KKExtras.m"; sourceTree = "<group>"; };
 		F4448B021834BB8600A65603 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -164,8 +166,6 @@
 		F4A6C99818338D3D00FEA8D8 /* LocalyticsSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalyticsSession.h; sourceTree = "<group>"; };
 		F4AC60711892410300171C2F /* KKMigrationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKMigrationController.h; sourceTree = "<group>"; };
 		F4AC60721892410300171C2F /* KKMigrationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKMigrationController.m; sourceTree = "<group>"; };
-		F4B2C9A41849758700473239 /* KKCardFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKCardFlowLayout.h; sourceTree = "<group>"; };
-		F4B2C9A51849758700473239 /* KKCardFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKCardFlowLayout.m; sourceTree = "<group>"; };
 		F4B2C9AA1849775B00473239 /* KKCardGradientDecorationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKCardGradientDecorationView.h; sourceTree = "<group>"; };
 		F4B2C9AB1849775B00473239 /* KKCardGradientDecorationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKCardGradientDecorationView.m; sourceTree = "<group>"; };
 		F4B2C9AD18498A9900473239 /* KKCardSeparatorDecorationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKCardSeparatorDecorationView.h; sourceTree = "<group>"; };
@@ -239,6 +239,8 @@
 		F40978E618925C3F00FAC23E /* Layouts */ = {
 			isa = PBXGroup;
 			children = (
+				F40978ED1892674D00FAC23E /* KKCollectionViewCardLayout.h */,
+				F40978EE1892674D00FAC23E /* KKCollectionViewCardLayout.m */,
 				F40978E718925C8000FAC23E /* KKCollectionViewSettingsLayout.h */,
 				F40978E818925C8000FAC23E /* KKCollectionViewSettingsLayout.m */,
 			);
@@ -312,8 +314,6 @@
 				F4A6C7FC18338CE800FEA8D8 /* KKText.m */,
 				F4E640411842EC08005677FB /* KKCustomizationController.h */,
 				F4E640421842EC08005677FB /* KKCustomizationController.m */,
-				F4B2C9A41849758700473239 /* KKCardFlowLayout.h */,
-				F4B2C9A51849758700473239 /* KKCardFlowLayout.m */,
 				F4AC60711892410300171C2F /* KKMigrationController.h */,
 				F4AC60721892410300171C2F /* KKMigrationController.m */,
 			);
@@ -681,6 +681,7 @@
 				F4E640391842A9CB005677FB /* KKLoginViewController.m in Sources */,
 				F4A6C8D918338CE900FEA8D8 /* KKConditionalRunner.m in Sources */,
 				F4A6C98618338CE900FEA8D8 /* KKCardsPageControl.m in Sources */,
+				F40978EF1892674D00FAC23E /* KKCollectionViewCardLayout.m in Sources */,
 				F4D011841834986E00FDAFC2 /* SBDrawingHelpers.m in Sources */,
 				F4AC60731892410300171C2F /* KKMigrationController.m in Sources */,
 				F4A6C98318338CE900FEA8D8 /* KKSettingsButtonCell.m in Sources */,
@@ -695,7 +696,6 @@
 				F4A6C98018338CE900FEA8D8 /* KKCardSegmentProductCell.m in Sources */,
 				F4A6C8D618338CE900FEA8D8 /* NSDate+KKExtras.m in Sources */,
 				F40978E918925C8000FAC23E /* KKCollectionViewSettingsLayout.m in Sources */,
-				F4B2C9A61849758700473239 /* KKCardFlowLayout.m in Sources */,
 				F4A6C98D18338CE900FEA8D8 /* KKSpinnerLayer.m in Sources */,
 				F4A6C97818338CE900FEA8D8 /* main.m in Sources */,
 				F4D0117B18348DED00FDAFC2 /* CAAnimation+SBExtras.m in Sources */,

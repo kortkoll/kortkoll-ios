@@ -40,7 +40,7 @@
   CGSize boundsSize = self.collectionView.bounds.size;
   
   CGRect frame = attributes.frame;
-  frame.origin.y += (boundsSize.height - contentSize.height - self.bottomPadding);
+  frame.origin.y += MAX(0, (boundsSize.height - contentSize.height - self.bottomPadding));
   [attributes setFrame:frame];
   
   return attributes;

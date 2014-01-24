@@ -1,5 +1,5 @@
 //
-//  KKCardFlowLayout.h
+//  KKCollectionViewCardLayout.h
 //  Kortkoll
 //
 //  Created by Simon Blommegård on 2013-11-29.
@@ -8,6 +8,6 @@
 
 @import UIKit;
 
-@interface KKCardFlowLayout : UICollectionViewFlowLayout
+@interface KKCollectionViewCardLayout : UICollectionViewFlowLayout
 
 @end

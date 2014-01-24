@@ -1,16 +1,16 @@
 //
-//  KKCardFlowLayout.m
+//  KKCollectionViewCardLayout.m
 //  Kortkoll
 //
 //  Created by Simon Blommegård on 2013-11-29.
 //  Copyright (c) 2013 Kortkoll. All rights reserved.
 //
 
-#import "KKCardFlowLayout.h"
+#import "KKCollectionViewCardLayout.h"
 #import "KKCardSeparatorDecorationView.h"
 @import Darwin.C.tgmath;
 
-@implementation KKCardFlowLayout
+@implementation KKCollectionViewCardLayout
 
 - (id)init {
   if (self = [super init]) {
@@ -22,16 +22,32 @@
 }
 
 - (NSArray *)layoutAttributesForElementsInRect:(CGRect)rect {
-  NSArray *attributes = [super layoutAttributesForElementsInRect:rect];
-  NSMutableArray *decorationViewAttributes = [NSMutableArray new];
+  NSMutableArray *attributes = [NSMutableArray new];
   
-  for (UICollectionViewLayoutAttributes *attribute in attributes) {
-    // Dont add a separator in the bottom
+  // Add items
+  for (NSInteger i = 0; i < [self.collectionView numberOfItemsInSection:0]; i++) {
+    UICollectionViewLayoutAttributes *attribute = [self layoutAttributesForItemAtIndexPath:[NSIndexPath indexPathForItem:i inSection:0]];
+    [attributes addObject:attribute];
+    
+    // …and separators
     if (attribute.representedElementCategory == UICollectionElementCategoryCell && (attribute.indexPath.item + 1) != [self.collectionView numberOfItemsInSection:attribute.indexPath.section])
-      [decorationViewAttributes addObject:[self layoutAttributesForDecorationViewOfKind:NSStringFromClass(KKCardSeparatorDecorationView.class) atIndexPath:attribute.indexPath]];
+      [attributes addObject:[self layoutAttributesForDecorationViewOfKind:NSStringFromClass(KKCardSeparatorDecorationView.class) atIndexPath:attribute.indexPath]];
   }
   
-  return [attributes arrayByAddingObjectsFromArray:decorationViewAttributes];
+  return attributes;
+}
+
+- (UICollectionViewLayoutAttributes *)layoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath {
+  UICollectionViewLayoutAttributes *attributes = [super layoutAttributesForItemAtIndexPath:indexPath];
+  
+  CGSize contentSize = [self collectionViewContentSize];
+  CGSize boundsSize = self.collectionView.bounds.size;
+  
+  CGRect frame = attributes.frame;
+  frame.origin.y += MAX(0, ((boundsSize.height - contentSize.height)/2));
+  [attributes setFrame:frame];
+  
+  return attributes;
 }
 
 - (UICollectionViewLayoutAttributes *)layoutAttributesForDecorationViewOfKind:(NSString*)decorationViewKind atIndexPath:(NSIndexPath *)indexPath {
@@ -39,8 +55,8 @@
                                                                                                              withIndexPath:indexPath];
   
   CGRect frame = [self layoutAttributesForItemAtIndexPath:indexPath].frame;
-  
-  CGSize size = CGSizeMake(46.f, 6.f);
+
+  CGSize size = CGSizeMake(46, 6);
   [attributes setFrame:CGRectMake(round((CGRectGetWidth(frame)-size.width)/2), CGRectGetMaxY(frame)+round((self.minimumLineSpacing-size.height)/2), size.width, size.height)];
   
   return attributes;

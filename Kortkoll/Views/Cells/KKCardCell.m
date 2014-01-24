@@ -9,7 +9,7 @@
 #import "KKCardCell.h"
 #import "KKCard.h"
 #import "KKCardSegmentProductCell.h"
-#import "KKCardFlowLayout.h"
+#import "KKCollectionViewCardLayout.h"
 #import "KKCardGradientDecorationView.h"
 @import Darwin.C.tgmath;
 
@@ -19,7 +19,7 @@
 @property (nonatomic, strong) UILabel *nameLabel;
 
 @property (nonatomic, strong) UICollectionView *collectionView;
-@property (nonatomic, strong) KKCardFlowLayout *layout;
+@property (nonatomic, strong) KKCollectionViewCardLayout *layout;
 
 @property (nonatomic, strong) KKCardGradientDecorationView *topGradientView;
 @property (nonatomic, strong) KKCardGradientDecorationView *bottomGradientView;
@@ -97,9 +97,9 @@
   return _collectionView;
 }
 
-- (KKCardFlowLayout *)layout {
+- (KKCollectionViewCardLayout *)layout {
   if (!_layout) {
-    _layout = [KKCardFlowLayout new];
+    _layout = [KKCollectionViewCardLayout new];
   }
   return _layout;
 }
@@ -116,7 +116,7 @@
 #pragma mark - UICollectionViewFlowLayout
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-  if (indexPath.item+1 == [collectionView numberOfItemsInSection:indexPath.section])
+  if (indexPath.item + 1 == [collectionView numberOfItemsInSection:indexPath.section])
     return CGSizeMake(CGRectGetWidth(collectionView.bounds), [KKCardSegmentProductCell heightForCard:self.card]);
   else
     return CGSizeMake(CGRectGetWidth(collectionView.bounds), [KKCardSegmentProductCell heightForProduct:self.card.products[indexPath.item]]);
@@ -131,7 +131,7 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
   KKCardSegmentProductCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass(KKCardSegmentProductCell.class) forIndexPath:indexPath];
   
-  if (indexPath.item+1 == [collectionView numberOfItemsInSection:indexPath.section])
+  if (indexPath.item + 1 == [collectionView numberOfItemsInSection:indexPath.section])
     [cell setCard:self.card];
   else
     [cell setProduct:self.card.products[indexPath.item]];
