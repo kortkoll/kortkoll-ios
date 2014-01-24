@@ -9,7 +9,6 @@
 #import "KKCardCell.h"
 #import "KKCard.h"
 #import "KKCardSegmentProductCell.h"
-#import "KKPullToRefreshContentView.h"
 #import "KKCardFlowLayout.h"
 #import "KKCardGradientDecorationView.h"
 @import Darwin.C.tgmath;
