@@ -90,7 +90,7 @@
     [_collectionView setDelegate:self];
     [_collectionView setDataSource:self];
     [_collectionView setBackgroundColor:[UIColor clearColor]];
-    [_collectionView setContentInset:UIEdgeInsetsMake(10.f, 0.f, 0.f, 0.f)];
+    [_collectionView setContentInset:UIEdgeInsetsMake(5.f, 0.f, 0.f, 0.f)];
     
     [_collectionView registerClass:KKCardSegmentProductCell.class forCellWithReuseIdentifier:NSStringFromClass(KKCardSegmentProductCell.class)];
   }
