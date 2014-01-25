@@ -139,7 +139,7 @@
     completion();
   }];
 
-  _dimView = [[UIView alloc] initWithFrame:CGRectMake(0.f, 20.f, CGRectGetWidth(backgroundView.bounds), CGRectGetHeight(backgroundView.bounds)-20.f)];
+  _dimView = [[UIView alloc] initWithFrame:backgroundView.bounds];
   [_dimView setBackgroundColor:[UIColor colorWithWhite:1.f alpha:.5f]];
   [_dimView setAlpha:0.f];
   
