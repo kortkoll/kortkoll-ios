@@ -41,7 +41,9 @@
     [self.collectionView reloadData];
   }];
   
-  [self _updateAction:self];
+  // The view will be loaded if we wake from a background fetch event, but updated, from that method, no need to do it here as well.
+  if ([UIApplication sharedApplication].applicationState != UIApplicationStateBackground)
+    [self _updateAction:self];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -121,8 +123,14 @@
 #pragma mark - Public
 
 - (void)performFetchWithCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler {
-  [self setFetchCompletionHandler:completionHandler];
-  [self _updateAction:self];
+  // Check if we are logged in, this SHOULD never happend.
+  if ([KKApp username].length > 0 && [KKApp password].length > 0) {
+    [self setFetchCompletionHandler:completionHandler];
+    [self _updateAction:self];
+  } else {
+    [[UIApplication sharedApplication] setMinimumBackgroundFetchInterval:UIApplicationBackgroundFetchIntervalNever];
+    completionHandler(UIBackgroundFetchResultNoData);
+  }
 }
 
 #pragma mark - Private
@@ -135,9 +143,6 @@
 
 - (void)_updateAction:(id)sender {
   if (self.bottomView.state != KKListCardsBottomViewStateLoading && [KKLibrary.library.refreshDate timeIntervalSinceNow] < -KKRefreshDelta) {
-    
-    // This is kind of an ugly hack.
-    [KKLibrary.library setRefreshDate:[NSDate date]];
     
     void (^failure)(NSURLSessionDataTask *, NSError *) = ^(NSURLSessionDataTask *task, NSError *error) {
       [self.bottomView setState:KKListCardsBottomViewStateDefault];
