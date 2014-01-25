@@ -18,7 +18,7 @@ NSString * const KKAppUsernameKey = @"KKAppUsernameKey";
 NSString * const KKAppPasswordKey = @"KKAppPasswordKey";
 
 const NSTimeInterval KKRefreshDelta = 10.;
-const NSTimeInterval KKMinimumBackgroundFetchInterval = 60.*60.*2;
+const NSTimeInterval KKMinimumBackgroundFetchInterval = 60. * 60. * 3;
 
 @implementation KKApp
 
