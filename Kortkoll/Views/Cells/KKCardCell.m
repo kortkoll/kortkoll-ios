@@ -11,6 +11,7 @@
 #import "KKCardSegmentProductCell.h"
 #import "KKCollectionViewCardLayout.h"
 #import "KKCardGradientDecorationView.h"
+#import "KKLibrary.h"
 @import Darwin.C.tgmath;
 
 @interface KKCardCell () <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
@@ -107,7 +108,7 @@
 - (void)setCard:(KKCard *)card {
   _card = card;
   [self.cardNameLabel setText:card.name];
-  [self.nameLabel setText:card.owner];
+  [self.nameLabel setText:[[NSDateFormatter kk_displayDateTimeFormatter] stringFromDate:[KKLibrary library].refreshDate]];
   
   [self.collectionView reloadData];
   [self setNeedsLayout];

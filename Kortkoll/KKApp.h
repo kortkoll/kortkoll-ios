@@ -41,6 +41,7 @@ extern const NSTimeInterval KKMinimumBackgroundFetchInterval;
 @interface NSDateFormatter (KKExtras)
 + (NSDate *)kk_dateFromString:(NSString *)string;
 + (NSDateFormatter *)kk_displayDateFormatter;
++ (NSDateFormatter *)kk_displayDateTimeFormatter;
 @end
 
 @interface NSNumberFormatter (KKExtras)

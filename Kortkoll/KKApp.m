@@ -75,6 +75,19 @@ const NSTimeInterval KKMinimumBackgroundFetchInterval = 60.*60.*2;
   return formatter;
 }
 
++ (NSDateFormatter *)kk_displayDateTimeFormatter {
+  static NSDateFormatter *formatter = nil;
+  static dispatch_once_t onceToken;
+  
+  dispatch_once(&onceToken, ^{
+    formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateStyle:NSDateFormatterMediumStyle];
+    [formatter setTimeStyle:NSDateFormatterMediumStyle];
+  });
+  
+  return formatter;
+}
+
 @end
 
 @implementation NSNumberFormatter (KKExtras)
