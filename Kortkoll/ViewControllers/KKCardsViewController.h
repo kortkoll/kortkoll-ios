@@ -9,5 +9,6 @@
 #import "KKViewController.h"
 
 @interface KKCardsViewController : KKViewController <UIViewControllerTransitioningDelegate>
+@property (nonatomic) BOOL cardsJustLoaded;
 - (void)performFetchWithCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler;
 @end

@@ -42,7 +42,8 @@
   }];
   
   // The view will be loaded if we wake from a background fetch event, but updated, from that method, no need to do it here as well.
-  if ([UIApplication sharedApplication].applicationState != UIApplicationStateBackground)
+  if ([UIApplication sharedApplication].applicationState != UIApplicationStateBackground ||
+      !self.cardsJustLoaded)
     [self _updateAction:self];
 }
 
@@ -144,12 +145,13 @@
 - (void)_updateAction:(id)sender {
   if (self.bottomView.state != KKListCardsBottomViewStateLoading && [KKLibrary.library.refreshDate timeIntervalSinceNow] < -KKRefreshDelta) {
     
+    [self.bottomView setState:KKListCardsBottomViewStateLoading];
+    
     void (^failure)(NSURLSessionDataTask *, NSError *) = ^(NSURLSessionDataTask *task, NSError *error) {
       [self.bottomView setState:KKListCardsBottomViewStateDefault];
       if (self.fetchCompletionHandler) self.fetchCompletionHandler(UIBackgroundFetchResultFailed);
     };
     
-    [self.bottomView setState:KKListCardsBottomViewStateLoading];
     [[KKAPISessionManager client] POST:@"session"
                             parameters:@{@"username":[KKApp username], @"password":[KKApp password]}
                                success:^(NSURLSessionDataTask *task, id responseObject) {

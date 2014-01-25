@@ -18,32 +18,40 @@
 #import "KKCardsViewController.h"
 
 @interface KKBackgroundViewController ()
-@property (nonatomic, strong) UINavigationBar *statusBarBackgroundView;
 
 @property (nonatomic, strong) KKTownScrollView *scrollView;
 @end
 
 @implementation KKBackgroundViewController
 
+- (void)dealloc {
+  [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
 - (void)viewDidLoad {
   [super viewDidLoad];
   
   [self.view addSubview:self.scrollView];
-  [self.view addSubview:self.statusBarBackgroundView];
   
   [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(_presentViewController:)
                                                name:KKUserDidLogoutNotification
                                              object:self.cardsViewController];
+  
+  [[NSNotificationCenter defaultCenter] addObserver:self
+                                           selector:@selector(_presentViewController:)
+                                               name:KKUserDidLoginNotification
+                                             object:self.loginViewController];
+  
+  [[NSNotificationCenter defaultCenter] addObserver:self
+                                           selector:@selector(_applicationDidBecomeActiveNotification:)
+                                               name:UIApplicationDidBecomeActiveNotification
+                                             object:nil];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
   [super viewDidAppear:animated];
 
   [self.scrollView setAnimating:YES];
-  [[NSNotificationCenter defaultCenter] addObserver:self
-                                           selector:@selector(_applicationDidBecomeActiveNotification:)
-                                               name:UIApplicationDidBecomeActiveNotification
-                                             object:nil];
   
   [KKConditionalRunner runIfIdentifier:@"info" notSet:^{
     KKWelcomeHUDView *view = [KKWelcomeHUDView new];
@@ -87,20 +95,23 @@
   return _cardsViewController;
 }
 
+- (KKLoginViewController *)loginViewController {
+  if (!_loginViewController) {
+    _loginViewController = [KKLoginViewController new];
+    
+    [_loginViewController setTransitioningDelegate:_loginViewController];
+    [_loginViewController setModalPresentationStyle:UIModalPresentationCustom];
+  }
+  return _loginViewController;
+}
+
 #pragma mark - Private
 
 - (void)_presentViewController:(id)sender {
   if ([KKApp password].length > 0 && [KKApp username].length > 0) {
     [self presentViewController:self.cardsViewController animated:YES completion:nil];
   } else {
-    KKLoginViewController *loginViewController = [KKLoginViewController new];
-
-    [loginViewController setTransitioningDelegate:loginViewController];
-    [loginViewController setModalPresentationStyle:UIModalPresentationCustom];
-    
-    [self presentViewController:loginViewController animated:YES completion:nil];
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(_presentViewController:) name:KKUserDidLoginNotification object:loginViewController];
+    [self presentViewController:self.loginViewController animated:YES completion:nil];
   }
 }
 

@@ -126,6 +126,10 @@
   
   [self.loginView setState:KKLoginViewStateLoading withButtonTitle:@"Loggar in…"];
   
+  void (^failure)(NSURLSessionDataTask *, NSError *) = ^(NSURLSessionDataTask *task, NSError *error) {
+    [self.loginView setErrorStateWithTitle:@"Fel anv./lösn." nextState:KKLoginViewStateDefault nextTitle:@"Logga in"];
+  };
+  
   [[KKAPISessionManager client] POST:@"session"
                           parameters:@{@"username":self.loginView.userNameTextField.text, @"password":self.loginView.passwordTextField.text}
                              success:^(NSURLSessionDataTask *task, id responseObject) {
@@ -138,7 +142,6 @@
                                                          success:^(NSURLSessionDataTask *task, id responseObject) {
                                                            
                                                            [self.loginView setState:KKLoginViewStateDone withButtonTitle:@"Inloggad"];
-                                                           [self.loginView clearForm];
                                                            
                                                            [KKLibrary.library setUnparsedCards:responseObject];
                                                            
@@ -147,16 +150,15 @@
                                                            [[UIApplication sharedApplication] setMinimumBackgroundFetchInterval:KKMinimumBackgroundFetchInterval];
                                                            
                                                            [self dismissViewControllerAnimated:YES completion:^{
+                                                             // Reset view controller
+                                                             [self.loginView setState:KKLoginViewStateDefault withButtonTitle:@"Logga in"];
+                                                             [self.loginView clearForm];
+                                                             
                                                              [[NSNotificationCenter defaultCenter] postNotificationName:KKUserDidLoginNotification object:self];
                                                            }];
                                                            
-                                                         } failure:^(NSURLSessionDataTask *task, NSError *error) {
-                                                           [self.loginView setErrorStateWithTitle:@"Fejl!" nextState:KKLoginViewStateDefault nextTitle:@"Logga in"];
-                                                         }];
-                               
-                             } failure:^(NSURLSessionDataTask *task, NSError *error) {
-                               [self.loginView setErrorStateWithTitle:@"Fel anv./lösn." nextState:KKLoginViewStateDefault nextTitle:@"Logga in"];
-                             }];
+                                                         } failure:failure];
+                             } failure:failure];
 }
 
 - (void)_loginViewPanAction:(UIPanGestureRecognizer *)sender {

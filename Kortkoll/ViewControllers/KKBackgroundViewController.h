@@ -9,7 +9,9 @@
 #import "KKViewController.h"
 
 @class KKCardsViewController;
+@class KKLoginViewController;
 
 @interface KKBackgroundViewController : KKViewController
 @property (nonatomic, strong) KKCardsViewController *cardsViewController;
+@property (nonatomic, strong) KKLoginViewController *loginViewController;
 @end
