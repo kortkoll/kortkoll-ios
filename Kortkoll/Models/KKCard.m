@@ -16,8 +16,8 @@
 + (instancetype)mock {
   return [self modelWithDictionary:
           @{
-            @"name":@"Blåa kortet",
-            @"owner":@"Ture Sventon",
+            @"name":@"\"Remsan\"",
+            @"owner":@"Edward Blom",
             @"purse":@(325.),
             @"products":@[[KKProduct mock]]
           }
