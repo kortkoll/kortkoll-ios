@@ -144,9 +144,9 @@
   if (!_infoButton) {
     _infoButton = [UIButton buttonWithType:UIButtonTypeCustom];
     
-    UIImage *image = [UIImage imageNamed:@"infobuttonopacity"];
+    UIImage *image = [UIImage imageNamed:@"infobutton"];
     [_infoButton setBackgroundImage:image forState:UIControlStateNormal];
-    [_infoButton setBackgroundImage:[UIImage imageNamed:@"infobutton"] forState:UIControlStateHighlighted];
+    [_infoButton setBackgroundImage:[UIImage imageNamed:@"infobuttonopacity"] forState:UIControlStateHighlighted];
     [_infoButton setFrame:CGRectMake(CGRectGetWidth(self.bounds)-image.size.width-10.f, 13.f, image.size.width, image.size.height)];
     
     [_infoButton addTarget:self action:@selector(_infoAction:) forControlEvents:UIControlEventTouchUpInside];

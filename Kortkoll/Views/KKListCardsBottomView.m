@@ -37,8 +37,8 @@ CGFloat kKKListCardsBottomViewHeight = 48.f;
   if (!_updateButton) {
     _updateButton = [UIButton buttonWithType:UIButtonTypeCustom];
 
-    [_updateButton setImage:[UIImage imageNamed:@"updateiconopacity"] forState:UIControlStateNormal];
-    [_updateButton setImage:[UIImage imageNamed:@"updateicon"] forState:UIControlStateHighlighted];
+    [_updateButton setImage:[UIImage imageNamed:@"updateicon"] forState:UIControlStateNormal];
+    [_updateButton setImage:[UIImage imageNamed:@"updateiconopacity"] forState:UIControlStateHighlighted];
     [_updateButton setFrame:CGRectMake(CGRectGetWidth(self.bounds)-CGRectGetHeight(self.bounds), 0.f, CGRectGetHeight(self.bounds), CGRectGetHeight(self.bounds))];
   }
   return _updateButton;
