@@ -142,10 +142,6 @@
 
 @implementation KKHUDViewController
 
-- (BOOL)wantsFullScreenLayout {
-  return YES;
-}
-
 // Keep the rotate-stuff as our main UI, yeah, I know we should find the presented one…
 - (BOOL)shouldAutorotate {
   return KKHUD.HUD.keyWindow.rootViewController.shouldAutorotate;
@@ -156,7 +152,7 @@
 }
 
 - (UIStatusBarStyle)preferredStatusBarStyle {
-  return UIStatusBarStyleLightContent;
+  return UIStatusBarStyleDefault;
 }
 
 @end
